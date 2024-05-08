@@ -1,0 +1,129 @@
+{
+  "m_Shader": {
+    "m_FileID": 1,
+    "m_PathID": -1634633083005179410,
+    "Name": "",
+    "IsNull": false
+  },
+  "m_SavedProperties": {
+    "m_TexEnvs": {
+      "_BaseTex": {
+        "m_Texture": {
+          "m_FileID": 3,
+          "m_PathID": -4947485973749442932,
+          "Name": "Eff_Sc_RampStar_01",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 4.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_MaskTex": {
+        "m_Texture": {
+          "m_FileID": 3,
+          "m_PathID": -4947485973749442932,
+          "Name": "Eff_Sc_RampStar_01",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 16.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_NoiseTex": {
+        "m_Texture": {
+          "m_FileID": 2,
+          "m_PathID": -6817417842953611804,
+          "Name": "Eff_Noise_Multi_01",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      }
+    },
+    "m_Ints": null,
+    "m_Floats": {
+      "_AlphaBrightness": 1.0,
+      "_AlphaFadeByDistanceToggle": 0.0,
+      "_AlphaFadeDistance": 2.0,
+      "_AlphaFadeDistanceInvertToggle": 0.0,
+      "_AlphaFadeOffset": 0.0,
+      "_AlphaSoftedgePower": 1.0,
+      "_AlphaSoftedgeScale": 1.0,
+      "_AlphaSoftedgeToggle": 0.0,
+      "_BaseTexAlphaBrightness": 4.0,
+      "_BaseTexAlphaChannelSwitch": 1.0,
+      "_BaseTexColorChannelSwitch": 4.0,
+      "_BaseTexURandomToggle": 0.0,
+      "_BaseTexVRandomToggle": 0.0,
+      "_BaseTex_Uspeed": 0.0,
+      "_BaseTex_Vspeed": 0.0,
+      "_BlendOP": 0.0,
+      "_ColorBrightness": 2.0,
+      "_Cull": 0.0,
+      "_DepthFade": 1.0,
+      "_DepthThresh": 1.0,
+      "_DstBlendMode": 10.0,
+      "_EffectedByFog": 0.0,
+      "_MHYZBias": 0.0,
+      "_MaskTexBlendModeToggle": 1.0,
+      "_MaskTexBrightness": 1.0,
+      "_MaskTexChannelSwitch": 1.0,
+      "_MaskTexToggle": 1.0,
+      "_MaskTex_Uspeed": 0.0,
+      "_MaskTex_Vspeed": -0.1,
+      "_MotionVectorsAlphaCutoff": 0.1,
+      "_NoiseIntensityOnMask": 0.0,
+      "_NoiseTexChannelSwitch": 0.0,
+      "_NoiseTexToggle": 1.0,
+      "_NoiseTexUVRandomToggle": 0.0,
+      "_NoiseTex_Uspeed": 0.0,
+      "_NoiseTex_Vspeed": -0.1,
+      "_Noise_Brightness": 0.5,
+      "_Noise_Offset": 0.0,
+      "_PolygonOffsetFactor": 0.0,
+      "_PolygonOffsetUnit": 0.0,
+      "_SOFTPARTICLES": 1.0,
+      "_SrcBlendMode": 5.0,
+      "_Ztest": 4.0,
+      "_Zwrite": 0.0
+    },
+    "m_Colors": {
+      "_DayColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_MainColor": {
+        "r": 0.022058845,
+        "g": 0.67626756,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_MeshParticleColorArray": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    }
+  },
+  "m_Name": "Eff_Sc_GroundLight_03",
+  "Name": "Eff_Sc_GroundLight_03"
+}

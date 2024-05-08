@@ -1,0 +1,13 @@
+#pragma once
+
+namespace EffectTool
+{
+	enum LEVELID { LEVEL_STATIC, LEVEL_EDITOR, LEVEL_LOADING, LEVEL_END };
+	enum COLLID { COLL_END };
+
+	enum PARTICLE_SIZE { SZ_MIN, SZ_MAX, SZ_END };
+	enum PARTICLE_LIFE { LF_MIN, LF_MAX, LF_END };
+	enum PARTICLE_SPD { SPD_MIN, SPD_MAX, SPD_ACC, SPD_END };
+	enum PARTICLE_COLOR { CR_R, CR_G, CR_B, CR_A, CR_END };
+	enum PARTICLE_DIR { DIR_X, DIR_Y, DIR_Z, DIR_END };
+}

@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="00. ToolApp">
+      <UniqueIdentifier>{03bb17b9-8f6e-4151-99e1-a0464a962f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. System">
+      <UniqueIdentifier>{0b4493ab-6ac2-42fd-bcf0-be78cfc33a1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. System\01. Headers">
+      <UniqueIdentifier>{813fab4d-07a0-490e-9773-a3817b8d219b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Levels">
+      <UniqueIdentifier>{290e532e-c018-4eb6-a0c2-0cb90058a320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Levels\01. Edit">
+      <UniqueIdentifier>{0453943f-3153-44de-bd1c-c354bd829309}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. Levels\99. Loading">
+      <UniqueIdentifier>{8c4134d7-463c-4cff-9c6a-1a29429ab706}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. System\02. Loader">
+      <UniqueIdentifier>{8b69eb20-47ae-4635-ae8c-48b5cf1c08f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. System\03. Imgui">
+      <UniqueIdentifier>{b299933c-a7ff-4d8a-9837-5a52d82f9eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility">
+      <UniqueIdentifier>{3e91b0c3-badd-4701-85a6-3f0bb3332784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\01. Tool Manager">
+      <UniqueIdentifier>{f6da6ec0-1020-4d9e-b726-6dc502ab1b5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\02. Camera">
+      <UniqueIdentifier>{8b97ddb6-8479-4b2e-8819-1286633d42f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects">
+      <UniqueIdentifier>{d1ddb1b6-ae0f-4344-8955-983d354cc218}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\03. Shader">
+      <UniqueIdentifier>{b1dbc0f2-9d50-4726-948b-3fd7ddd0c744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components">
+      <UniqueIdentifier>{f1b8bd53-06d4-4e13-97d8-f996c1af1bfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\01. Triangle">
+      <UniqueIdentifier>{906d67da-bd0d-4f67-8912-097d1794bef0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\02. NaviMesh">
+      <UniqueIdentifier>{7480ee96-7f74-4c4d-9f09-83ca2192ae05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model">
+      <UniqueIdentifier>{98d2c85b-b3f7-415f-9584-e9d1ad0c3625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model\01. Edit_Model">
+      <UniqueIdentifier>{2c1adf3d-256a-4501-a9b5-2068b9b07907}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model\02. Edit_Mesh">
+      <UniqueIdentifier>{b12d7379-4a2f-4e10-8315-3426d7b2fe0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model\04. Edit_Animation">
+      <UniqueIdentifier>{c4f51aad-d7ea-4098-b815-2862f9ffe731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model\05. Edit_Channel">
+      <UniqueIdentifier>{8a35e19e-7ff7-47a2-9ed9-6bab5e410e93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. Utility\04. Components\03. Edit_Model\03. Edit_Bone">
+      <UniqueIdentifier>{9372d14a-8d62-4bb6-9562-8fab34d5e0aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\01. Terrain">
+      <UniqueIdentifier>{9e30f3e1-802a-4451-b479-c0b685cd3e1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\03. Brush">
+      <UniqueIdentifier>{45b6c044-51fc-4c2e-865f-c11089e84cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\02. Edit_Object">
+      <UniqueIdentifier>{724d7ef0-be19-4ff4-96f7-fbc169b5403b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\04. Instancing">
+      <UniqueIdentifier>{a0430482-de7c-4eee-839b-8a393a39b471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\05. Spawner">
+      <UniqueIdentifier>{03268f0e-45d5-47f6-83e6-6a2f0b871e42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="04. GameObjects\06. Water">
+      <UniqueIdentifier>{84bb7b42-6049-4d2c-b7d8-b732574456c0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MapTool.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ToolApp.h">
+      <Filter>00. ToolApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Defines.h">
+      <Filter>01. System\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Enum.h">
+      <Filter>01. System\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Edit.h">
+      <Filter>02. Levels\01. Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loader.h">
+      <Filter>01. System\02. Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Loading.h">
+      <Filter>02. Levels\99. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Manager.h">
+      <Filter>03. Utility\01. Tool Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Tool_Struct.h">
+      <Filter>01. System\01. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imconfig.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_impl_dx11.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_impl_win32.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_internal.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\ImGuizmo.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_rectpack.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_textedit.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_truetype.h">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Free.h">
+      <Filter>03. Utility\02. Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Triangle.h">
+      <Filter>03. Utility\04. Components\01. Triangle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\NaviMesh.h">
+      <Filter>03. Utility\04. Components\02. NaviMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Channel.h">
+      <Filter>03. Utility\04. Components\03. Edit_Model\05. Edit_Channel</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Bone.h">
+      <Filter>03. Utility\04. Components\03. Edit_Model\03. Edit_Bone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Animation.h">
+      <Filter>03. Utility\04. Components\03. Edit_Model\04. Edit_Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Mesh.h">
+      <Filter>03. Utility\04. Components\03. Edit_Model\02. Edit_Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Model.h">
+      <Filter>03. Utility\04. Components\03. Edit_Model\01. Edit_Model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Terrain.h">
+      <Filter>04. GameObjects\01. Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Brush.h">
+      <Filter>04. GameObjects\03. Brush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Object.h">
+      <Filter>04. GameObjects\02. Edit_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Instancing.h">
+      <Filter>04. GameObjects\04. Instancing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Spawner.h">
+      <Filter>04. GameObjects\05. Spawner</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Edit_Water.h">
+      <Filter>04. GameObjects\06. Water</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MapTool.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ToolApp.cpp">
+      <Filter>00. ToolApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Edit.cpp">
+      <Filter>02. Levels\01. Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loader.cpp">
+      <Filter>01. System\02. Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Loading.cpp">
+      <Filter>02. Levels\99. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Tool_Manager.cpp">
+      <Filter>03. Utility\01. Tool Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_demo.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_draw.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_impl_dx11.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_impl_win32.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_tables.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_widgets.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\ImGuizmo.cpp">
+      <Filter>01. System\03. Imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Free.cpp">
+      <Filter>03. Utility\02. Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Triangle.cpp">
+      <Filter>03. Utility\04. Components\01. Triangle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\NaviMesh.cpp">
+      <Filter>03. Utility\04. Components\02. NaviMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Channel.cpp">
+      <Filter>03. Utility\04. Components\03. Edit_Model\05. Edit_Channel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Bone.cpp">
+      <Filter>03. Utility\04. Components\03. Edit_Model\03. Edit_Bone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Animation.cpp">
+      <Filter>03. Utility\04. Components\03. Edit_Model\04. Edit_Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Mesh.cpp">
+      <Filter>03. Utility\04. Components\03. Edit_Model\02. Edit_Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Model.cpp">
+      <Filter>03. Utility\04. Components\03. Edit_Model\01. Edit_Model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Terrain.cpp">
+      <Filter>04. GameObjects\01. Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Brush.cpp">
+      <Filter>04. GameObjects\03. Brush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Object.cpp">
+      <Filter>04. GameObjects\02. Edit_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Instancing.cpp">
+      <Filter>04. GameObjects\04. Instancing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Spawner.cpp">
+      <Filter>04. GameObjects\05. Spawner</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Edit_Water.cpp">
+      <Filter>04. GameObjects\06. Water</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MapTool.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="MapTool.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Terrain.hlsl">
+      <Filter>03. Utility\03. Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Instancing.hlsl">
+      <Filter>03. Utility\03. Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Cube.hlsl">
+      <Filter>03. Utility\03. Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="98. Default">
+      <UniqueIdentifier>{62fe99d9-39b7-4fb7-90ed-f07ca9195d76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Headers">
+      <UniqueIdentifier>{7c370efe-55b9-4b88-b1eb-01c32b6d2399}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels">
+      <UniqueIdentifier>{f4728f68-46ea-4ff6-a579-65387807fba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\Loading">
+      <UniqueIdentifier>{65d2d7e7-9f4d-49c7-b85d-dec8839f0c15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\Loading\Loader">
+      <UniqueIdentifier>{ec74bf78-6d5d-4f5c-a2ed-b227d60e11e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\Level_Edit">
+      <UniqueIdentifier>{b54fc2d9-1e26-43e7-843f-9dd23e8bb641}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObject">
+      <UniqueIdentifier>{e9d8f65e-4970-4502-ae8d-85f7acbc0c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObject\Camera">
+      <UniqueIdentifier>{6d60480c-8682-403c-9d9f-96aab7dfc9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. ToolWindow">
+      <UniqueIdentifier>{a195556e-aa2e-4fef-824e-edef0257f867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="03. ToolWindow\imgui">
+      <UniqueIdentifier>{7446de20-4edd-43de-8da4-bcc5154d6948}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObject\Terrain">
+      <UniqueIdentifier>{c28167ea-1acf-4a33-95d8-b9b3ab612abc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00. MainApp">
+      <UniqueIdentifier>{cd5179a4-71a9-415e-919a-ba296a687fcd}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EffectTool.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectMainApp.h">
+      <Filter>00. MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectTool_Defines.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectTool_Enum.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Loading.h">
+      <Filter>01. Levels\Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loader.h">
+      <Filter>01. Levels\Loading\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Edit.h">
+      <Filter>01. Levels\Level_Edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Free.h">
+      <Filter>02. GameObject\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imconfig.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_impl_dx11.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_impl_win32.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imgui_internal.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\ImGuizmo.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_rectpack.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_textedit.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui\imstb_truetype.h">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ToolWindow.h">
+      <Filter>03. ToolWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EffectTool_Macro.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Terrain.h">
+      <Filter>02. GameObject\Terrain</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="EffectTool.ico">
+      <Filter>98. Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>98. Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EffectTool.rc">
+      <Filter>98. Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EffectTool.cpp">
+      <Filter>98. Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EffectMainApp.cpp">
+      <Filter>00. MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Loading.cpp">
+      <Filter>01. Levels\Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loader.cpp">
+      <Filter>01. Levels\Loading\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Edit.cpp">
+      <Filter>01. Levels\Level_Edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Free.cpp">
+      <Filter>02. GameObject\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_demo.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_draw.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_impl_dx11.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_impl_win32.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_tables.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\imgui_widgets.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Public\imgui\ImGuizmo.cpp">
+      <Filter>03. ToolWindow\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ToolWindow.cpp">
+      <Filter>03. ToolWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Terrain.cpp">
+      <Filter>02. GameObject\Terrain</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

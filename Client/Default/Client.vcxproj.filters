@@ -1,0 +1,2382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_UI.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Vtx.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_VtxAnimMesh.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_VtxMesh.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_VtxNorTex.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Vtxtex.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Particle.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Trail.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Cell.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Deferred.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_SkyBox.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_VtxEffect.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_Instancing.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_MeshFX.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_AnimFX.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+    <FxCompile Include="..\..\Reference\ShaderFiles\Shader_TexFX.hlsl">
+      <Filter>97. ShaderFiles</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>98. Default</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>98. Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MainApp.cpp">
+      <Filter>00. MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_World.cpp">
+      <Filter>01. Levels\02. World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Loading.cpp">
+      <Filter>01. Levels\99. Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Loader.cpp">
+      <Filter>01. Levels\99. Loading\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Ortho.cpp">
+      <Filter>02. GameObjects\03. Ortho</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Creature.cpp">
+      <Filter>02. GameObjects\01. Creature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Player.cpp">
+      <Filter>02. GameObjects\01. Creature\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\PartObject.cpp">
+      <Filter>02. GameObjects\02. PartObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Part_Body.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Part_Weapon.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_demo.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_draw.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_impl_dx11.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_impl_win32.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_tables.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\imgui_widgets.cpp">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DebugTool.cpp">
+      <Filter>95. Utils\01. DebugTool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AlphaRect.cpp">
+      <Filter>02. GameObjects\03. Ortho\02. AlphaRect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Rect.cpp">
+      <Filter>02. GameObjects\03. Ortho\01. Rect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ButtonAlpha.cpp">
+      <Filter>02. GameObjects\03. Ortho\04. ButtonAlpha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Button.cpp">
+      <Filter>02. GameObjects\03. Ortho\03. Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Main.cpp">
+      <Filter>02. GameObjects\99. Camera\Camera_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Traveler.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\01. Traveler</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Diluc.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\03. Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Claymore_Wolfmound.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\02. Claymore\01. Claymore_Wolfmound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Andrius.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\99. Andrius</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Andrius.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\01. Andrius</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\World.cpp">
+      <Filter>02. GameObjects\98. Worlds\01. World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\WorldElement.cpp">
+      <Filter>02. GameObjects\98. Worlds\03. WorldElement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Terrain.cpp">
+      <Filter>02. GameObjects\98. Worlds\02. Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Mannequin.cpp">
+      <Filter>02. GameObjects\97. UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Decor.cpp">
+      <Filter>02. GameObjects\03. Ortho\05. UI_Decor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Hp_Bar.cpp">
+      <Filter>02. GameObjects\03. Ortho\06. Hp_Bar\00.NormalHealth</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Paimon_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Paimon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TeamConfig_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\TeamConfig</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Gacha_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Gacha</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Gacha_Result_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Gacha\Result</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_Manager.cpp">
+      <Filter>02. GameObjects\97. UI\99.Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Page_Main.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DeciderObject.cpp">
+      <Filter>02. GameObjects\00. DeciderObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Camera_Char.cpp">
+      <Filter>02. GameObjects\99. Camera\Camera_Char</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_IceCone.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IceCone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item.cpp">
+      <Filter>02. GameObjects\04. Inventory\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Inventory.cpp">
+      <Filter>02. GameObjects\04. Inventory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Weapon.cpp">
+      <Filter>02. GameObjects\04. Inventory\Item\01. Weapon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\UI_DualTex.cpp">
+      <Filter>02. GameObjects\03. Ortho\07. DualTex</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dialogue_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Dialogue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect.cpp">
+      <Filter>02. GameObjects\05. Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Flame.cpp">
+      <Filter>02. GameObjects\05. Effect\Flame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Main_Party_Buttons.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Main\TeamAssocButtons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CharacterController.cpp">
+      <Filter>02. GameObjects\96. CharacterController</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Zhongli.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\05. Zhongli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pole_Kunwu.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\01. Pole_Kunwu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Part_Status.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Katheryne.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Paimon\TempNPC</Filter>
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Katheryne</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Stamina_Bar.cpp">
+      <Filter>02. GameObjects\03. Ortho\09. Stamina_Bar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\InteractionBox.cpp">
+      <Filter>02. GameObjects\03. Ortho\08. InteractionBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Damage_Font.cpp">
+      <Filter>02. GameObjects\03. Ortho\10. Damage_Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Diluc.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\04. Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Zhongli.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\09. Zhongli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SkyBox.cpp">
+      <Filter>02. GameObjects\98. Worlds\04. SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\MiniMap.cpp">
+      <Filter>02. GameObjects\03. Ortho\11. Mini_Map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Quest_Manager.cpp">
+      <Filter>02. GameObjects\06. Quest\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Quest.cpp">
+      <Filter>02. GameObjects\06. Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\InputQuests.cpp">
+      <Filter>02. GameObjects\06. Quest\03.InputQuests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Slime_Small.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\00. Slime\01. Small</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Slime_Water.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\01. Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Andrius.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Monster\01. Andrius</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_IceShockWave.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IceShockWave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_IcePillar.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IcePillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_WindBlade.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\WindBlade</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SkillObj.cpp">
+      <Filter>02. GameObjects\07. SkillObj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Slime_Ice.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\02. Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Slime_Big.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\00. Slime\02. Big</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Slime_IceCone.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\01. Slime</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Artifact.cpp">
+      <Filter>02. GameObjects\04. Inventory\Item\02. Artifact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Material.cpp">
+      <Filter>02. GameObjects\04. Inventory\Item\03. Material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Item_Consumable.cpp">
+      <Filter>02. GameObjects\04. Inventory\Item\04. Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Pillar.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SelRect.cpp">
+      <Filter>02. GameObjects\03. Ortho\12. Select_Box</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\KillQuests.cpp">
+      <Filter>02. GameObjects\06. Quest\00.KillQuests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Hili_Normal.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\03. ChuChu\01. Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Hili_Normal.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\01. ChuChu\01. Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FallingStone.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_WindRange.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\WindRange</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Hili_Club.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\02. Hili</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Paimon.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Paimon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Paimon.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\01. Paimon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LoadingRect.cpp">
+      <Filter>02. GameObjects\03. Ortho\99. LoadingRect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Ground_item.cpp">
+      <Filter>02. GameObjects\04. Inventory\Ground_Item</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Phoenix.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Diluc\Phoenix</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Hitting.cpp">
+      <Filter>02. GameObjects\05. Effect\Hit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\AndriusSword.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\AndriusSword</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Rush_Circle.cpp">
+      <Filter>02. GameObjects\05. Effect\Rush_Circle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Rush.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Rush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Rush2.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Rush2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Zhongli_SpExplode.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\00.Zhongli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Ice_Floor.cpp">
+      <Filter>02. GameObjects\05. Effect\Ice_Floor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_BurstBackGround.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Element_Shield.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\00.ElementShields</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ItemGlow.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Zhongli_Shield.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\Shield</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Katheryne.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\02. Kathertyne</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effect_Fog.cpp">
+      <Filter>02. GameObjects\05. Effect\Fog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Element_OHD.cpp">
+      <Filter>02. GameObjects\03. Ortho\13. Element_OHD</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Brute.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\02. Brute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Brute.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\04. Brute</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Brute_Axe.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\02. Axe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Brute_Shield.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\01. Shield</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Part_Glider.cpp">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Glider_Origin.cpp">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\01. Origin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Glider_Liyue.cpp">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\02. Liyue</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Barbara.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\02. Barbara</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Catalyst_Zephyrus.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\04. Catalyst</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Barbara.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\01. Barbara</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Glider_Psalmus.cpp">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\03. Psalmus</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\SpawnBox.cpp">
+      <Filter>02. GameObjects\08. EventCollider\00. SpawnBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Updraft.cpp">
+      <Filter>02. GameObjects\08. EventCollider\01. Updraft</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EventCollider.cpp">
+      <Filter>02. GameObjects\08. EventCollider</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Instancing_Element.cpp">
+      <Filter>02. GameObjects\98. Worlds\05. InstancingElement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Cross.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Claw.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Claw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Impact_Glow.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pillar_Wave.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\00.Zhongli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Piercing_Trail.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\00.Zhongli</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Squence.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Transition.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Flame0.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_GroundStomp.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Flame_Enchant_Cross.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\01.Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FallingStoneTrail.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStone</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Flame1.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Smoke.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Slash_Trail.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FlameSlash_Trail.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_WindField.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\01.WindField</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Temple_Lion.cpp">
+      <Filter>01. Levels\03. Temple of the Lion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Elemental_Particle.cpp">
+      <Filter>02. GameObjects\11. Elemental\01. Elemental_Particle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Elemental.cpp">
+      <Filter>02. GameObjects\11. Elemental</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Elemental_Manager.cpp">
+      <Filter>02. GameObjects\11. Elemental\00. Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Effigy_Fire.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\98. Effigy\01. Effigy_Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ElementalReaction.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Common\ElementalReaction</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BabaraBasicAttack.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Babara\BabaraBasicAttack</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Water_Fog.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\EFF_TEST.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\99.TEST_ONLY_CLASS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Barbara_Burst_Magic_Circle.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\02.Barbara</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Effigy_Fire.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\05. Effigy\01. Effigy_Fire</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FallingSpear.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingSpear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FallingSpearTrail.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround\FallingSpearTrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FallingSpearTrail.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround\FallingSpearTrail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Barbara_Normal_Star.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FireCube.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Cube</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Ambor.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Ambor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Ambor.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\03. Ambor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Gliding_Ring.cpp">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test\Gliding_Ring</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Gliding_Test.cpp">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Mini_Game.cpp">
+      <Filter>02. GameObjects\12. Mini_Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FirePillar.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_FireCore.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Barbara_Normal_Atk.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\02.Barbara</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Liquid_Splash.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Water.cpp">
+      <Filter>02. GameObjects\98. Worlds\06. Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dungeon.cpp">
+      <Filter>02. GameObjects\98. Worlds\07. Dungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DungeonElement.cpp">
+      <Filter>02. GameObjects\98. Worlds\08. DungeonElement</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_StrongHold_AbyssMage.cpp">
+      <Filter>01. Levels\04. StrongHold Abyss Mage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_Quest.cpp">
+      <Filter>01. Levels\05. Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Level_StormTerror.cpp">
+      <Filter>01. Levels\06. Confront StormTerror</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\CommonNPC.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\NPC_Male</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Accelerating_Ring.cpp">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test\Accelerating_Ring</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Quest_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Quest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_NPCMale.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\04. NPC_Male</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_NPCFeMale.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\05. NPC_Female</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Dvalin.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\97. Dvalin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Dvalin.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\06. Dvalin</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Dvalin.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Monster\03. Dvlain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Swan.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Swan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Swan.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\06. Swan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_BigExplosion.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\BigExplosion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireTrsCow.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\08. EffigyFire_TrsCow</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireTrsFish.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\09. EffigyFire_TrsFish</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireAura.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\01. EffigyFire_Aura</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireExplode.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\02. EffigyFire_Explode</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireImpact.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\03. EffigyFire_Impact</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFirePillar.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\04. EffigyFire_Pillar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireProjectile.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\05. EffigyFire_Projectile</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireTrail.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\06. EffigyFire_Trail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFire_MagicCircle.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\07. EffigyFire_MagicCircle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_BarbaraES.cpp">
+      <Filter>95. Utils\03. AssetFX\04. Character\01. Barbara_ES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_AndriusSavageTornado.cpp">
+      <Filter>95. Utils\03. AssetFX\03. Andrius\01. Andrius_SavageTornado</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_AndriusMeteorite.cpp">
+      <Filter>95. Utils\03. AssetFX\03. Andrius\02. Andrius_Meteorite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_CircularIndicator.cpp">
+      <Filter>95. Utils\03. AssetFX\01. Common\04. CircularIndicator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_ShockWave.cpp">
+      <Filter>95. Utils\03. AssetFX\01. Common\03. ShockWave</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_Meteorite.cpp">
+      <Filter>95. Utils\03. AssetFX\01. Common\02. Meteorite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_Tornado.cpp">
+      <Filter>95. Utils\03. AssetFX\01. Common\01. Tornado</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DebugCheat.cpp">
+      <Filter>95. Utils\02. DebugCheat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Effigy_Recharge_Trail.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireTrsBomb.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\10. EffigyFire_TrsBomb</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_TelePort.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\00.TelePort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\TelePort.cpp">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\TelePort</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DeliveryQuests.cpp">
+      <Filter>02. GameObjects\06. Quest\02.DeliveryQuests</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Shop_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_EffigyFireClap.cpp">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\11. EffigyFire_Clap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Alchemy_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Alchemy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Gate.cpp">
+      <Filter>02. GameObjects\08. EventCollider\02. Gate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ElementalReactor.cpp">
+      <Filter>95. Utils\04. Dungeon\01. ElementalReactor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Abyss_Mage.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\03. Abyss_Mage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Abyss_Mage.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\07. Abyss_Mage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Glider_Thunderclap.cpp">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\04. Thunderclap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Status_Raiden.cpp">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\05. Raiden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Pole_Narukami.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\02. Pole_Narukami</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Body_Raiden.cpp">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\04. Raiden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Chakra.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Chakra</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Cooking_Page.cpp">
+      <Filter>02. GameObjects\97. UI\Page\Cooking</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Raiden_Symbol.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Elemental_Symbol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ElementalReactor_Manager.cpp">
+      <Filter>95. Utils\04. Dungeon\01. ElementalReactor\ElementalReactor_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DungeonDoor.cpp">
+      <Filter>95. Utils\04. Dungeon\02. DungeonDoor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GearOperator.cpp">
+      <Filter>95. Utils\04. Dungeon\06. GearOperator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DungeonPlatform.cpp">
+      <Filter>95. Utils\04. Dungeon\03. DungeonPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\GearOperator_Manager.cpp">
+      <Filter>95. Utils\04. Dungeon\06. GearOperator\GearOperator_Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DungeonExit.cpp">
+      <Filter>95. Utils\04. Dungeon\04. DungeonExit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Raiden_ElementAttack.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Raiden</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Staff_Elec.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\01. Staff_Elec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Skill_Abyss_Mage_Shield.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Abyss_Mage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Raiden_Light.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Elemental_Light</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\LineTrap.cpp">
+      <Filter>02. GameObjects\05. Effect\LineTrap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DungeonChest.cpp">
+      <Filter>95. Utils\04. Dungeon\05. DungeonChest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DvalinPlatform.cpp">
+      <Filter>02. GameObjects\01. Creature\Monster\97. Dvalin\DvalinPlatform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Staff_Ice.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\02. Staff_Ice</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Staff_Water.cpp">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\03. Staff_Water</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Lightning.cpp">
+      <Filter>02. GameObjects\07. SkillObj\Lightning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\ChainLightning.cpp">
+      <Filter>02. GameObjects\05. Effect\ChainLightning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\DoorPortal.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\BossChest.cpp">
+      <Filter>95. Utils\04. Dungeon\07. BossChest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\FX_RaidenES.cpp">
+      <Filter>95. Utils\03. AssetFX\04. Character\02. Raiden_ES</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Shougun_Trail_TEST.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Mouse.cpp">
+      <Filter>02. GameObjects\03. Ortho\98. Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Eff_Activate.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Location.cpp">
+      <Filter>02. GameObjects\08. EventCollider\03. Location</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Private\Raiden_Trail_Add.cpp">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Public\Client_Defines.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Enum.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Macro.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Client_Struct.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>98. Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MainApp.h">
+      <Filter>00. MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_World.h">
+      <Filter>01. Levels\02. World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Loading.h">
+      <Filter>01. Levels\99. Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Loader.h">
+      <Filter>01. Levels\99. Loading\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Ortho.h">
+      <Filter>02. GameObjects\03. Ortho</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Creature.h">
+      <Filter>02. GameObjects\01. Creature</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Player.h">
+      <Filter>02. GameObjects\01. Creature\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\PartObject.h">
+      <Filter>02. GameObjects\02. PartObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Part_Body.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Part_Weapon.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imconfig.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_dx11.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_impl_win32.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imgui_internal.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_rectpack.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_textedit.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\imstb_truetype.h">
+      <Filter>95. Utils\01. DebugTool\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DebugTool.h">
+      <Filter>95. Utils\01. DebugTool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AlphaRect.h">
+      <Filter>02. GameObjects\03. Ortho\02. AlphaRect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Rect.h">
+      <Filter>02. GameObjects\03. Ortho\01. Rect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ButtonAlpha.h">
+      <Filter>02. GameObjects\03. Ortho\04. ButtonAlpha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Button.h">
+      <Filter>02. GameObjects\03. Ortho\03. Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Main.h">
+      <Filter>02. GameObjects\99. Camera\Camera_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Traveler.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\01. Traveler</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Diluc.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\03. Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Claymore_Wolfmound.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\02. Claymore\01. Claymore_Wolfmound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Andrius.h">
+      <Filter>02. GameObjects\01. Creature\Monster\99. Andrius</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Andrius.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\01. Andrius</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\World.h">
+      <Filter>02. GameObjects\98. Worlds\01. World</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\WorldElement.h">
+      <Filter>02. GameObjects\98. Worlds\03. WorldElement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Terrain.h">
+      <Filter>02. GameObjects\98. Worlds\02. Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Mannequin.h">
+      <Filter>02. GameObjects\97. UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Decor.h">
+      <Filter>02. GameObjects\03. Ortho\05. UI_Decor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Hp_Bar.h">
+      <Filter>02. GameObjects\03. Ortho\06. Hp_Bar\00.NormalHealth</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Page.h">
+      <Filter>02. GameObjects\97. UI\Page</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Paimon_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Paimon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TeamConfig_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\TeamConfig</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Gacha_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Gacha</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Gacha_Result_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Gacha\Result</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_Manager.h">
+      <Filter>02. GameObjects\97. UI\99.Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Page_Main.h">
+      <Filter>02. GameObjects\97. UI\Page\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DeciderObject.h">
+      <Filter>02. GameObjects\00. DeciderObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Camera_Char.h">
+      <Filter>02. GameObjects\99. Camera\Camera_Char</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_IceCone.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IceCone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Inventory.h">
+      <Filter>02. GameObjects\04. Inventory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Weapon.h">
+      <Filter>02. GameObjects\04. Inventory\Item\01. Weapon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\UI_DualTex.h">
+      <Filter>02. GameObjects\03. Ortho\07. DualTex</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dialogue_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Dialogue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect.h">
+      <Filter>02. GameObjects\05. Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Flame.h">
+      <Filter>02. GameObjects\05. Effect\Flame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Main_Party_Buttons.h">
+      <Filter>02. GameObjects\97. UI\Page\Main\TeamAssocButtons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CharacterController.h">
+      <Filter>02. GameObjects\96. CharacterController</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Zhongli.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\05. Zhongli</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Stamina_Bar.h">
+      <Filter>02. GameObjects\03. Ortho\09. Stamina_Bar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\InteractionBox.h">
+      <Filter>02. GameObjects\03. Ortho\08. InteractionBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Damage_Font.h">
+      <Filter>02. GameObjects\03. Ortho\10. Damage_Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pole_Kunwu.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\01. Pole_Kunwu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Part_Status.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Diluc.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\04. Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Zhongli.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\09. Zhongli</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\MiniMap.h">
+      <Filter>02. GameObjects\03. Ortho\11. Mini_Map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Quest_Manager.h">
+      <Filter>02. GameObjects\06. Quest\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Quest.h">
+      <Filter>02. GameObjects\06. Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\InputQuests.h">
+      <Filter>02. GameObjects\06. Quest\03.InputQuests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Slime_Small.h">
+      <Filter>02. GameObjects\01. Creature\Monster\00. Slime\01. Small</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Slime_Water.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\01. Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Slime_Big.h">
+      <Filter>02. GameObjects\01. Creature\Monster\00. Slime\02. Big</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Slime_Ice.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\02. Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Slime_IceCone.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\01. Slime</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Andrius.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Monster\01. Andrius</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_IceShockWave.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IceShockWave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_IcePillar.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\IcePillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_WindBlade.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\WindBlade</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SkillObj.h">
+      <Filter>02. GameObjects\07. SkillObj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Artifact.h">
+      <Filter>02. GameObjects\04. Inventory\Item\02. Artifact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Material.h">
+      <Filter>02. GameObjects\04. Inventory\Item\03. Material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item_Consumable.h">
+      <Filter>02. GameObjects\04. Inventory\Item\04. Cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Pillar.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SkyBox.h">
+      <Filter>02. GameObjects\98. Worlds\04. SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SelRect.h">
+      <Filter>02. GameObjects\03. Ortho\12. Select_Box</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\KillQuests.h">
+      <Filter>02. GameObjects\06. Quest\00.KillQuests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Item.h">
+      <Filter>02. GameObjects\04. Inventory\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Hili_Normal.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\03. ChuChu\01. Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Hili_Normal.h">
+      <Filter>02. GameObjects\01. Creature\Monster\01. ChuChu\01. Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FallingStone.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_WindRange.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\WindRange</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Hili_Club.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\02. Hili</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Paimon.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Paimon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Paimon.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\01. Paimon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LoadingRect.h">
+      <Filter>02. GameObjects\03. Ortho\99. LoadingRect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Ground_Item.h">
+      <Filter>02. GameObjects\04. Inventory\Ground_Item</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Phoenix.h">
+      <Filter>02. GameObjects\07. SkillObj\Diluc\Phoenix</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Hitting.h">
+      <Filter>02. GameObjects\05. Effect\Hit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\AndriusSword.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\AndriusSword</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Rush_Circle.h">
+      <Filter>02. GameObjects\05. Effect\Rush_Circle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Katheryne.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Katheryne</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Rush.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Rush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Rush2.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Rush2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Ice_Floor.h">
+      <Filter>02. GameObjects\05. Effect\Ice_Floor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_BurstBackGround.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Zhongli_SpExplode.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\00.Zhongli</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Element_Shield.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\00.ElementShields</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Zhongli_Shield.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\Shield</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Katheryne.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\02. Kathertyne</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effect_Fog.h">
+      <Filter>02. GameObjects\05. Effect\Fog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Element_OHD.h">
+      <Filter>02. GameObjects\03. Ortho\13. Element_OHD</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Brute.h">
+      <Filter>02. GameObjects\01. Creature\Monster\02. Brute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Brute.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\04. Brute</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Brute_Shield.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\01. Shield</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Brute_Axe.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\02. Axe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Part_Glider.h">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Glider_Origin.h">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\01. Origin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Glider_Liyue.h">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\02. Liyue</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Barbara.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\02. Barbara</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Catalyst_Zephyrus.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\04. Catalyst</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Barbara.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\01. Barbara</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Glider_Psalmus.h">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\03. Psalmus</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\SpawnBox.h">
+      <Filter>02. GameObjects\08. EventCollider\00. SpawnBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Claw.h">
+      <Filter>02. GameObjects\07. SkillObj\Andrius\Claw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Impact_Glow.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Cross.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Updraft.h">
+      <Filter>02. GameObjects\08. EventCollider\01. Updraft</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EventCollider.h">
+      <Filter>02. GameObjects\08. EventCollider</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Instancing_Element.h">
+      <Filter>02. GameObjects\98. Worlds\05. InstancingElement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pillar_Wave.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\00.Zhongli</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Piercing_Trail.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\00.Zhongli</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Squence.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Transition.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Flame0.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_GroundStomp.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Flame_Enchant_Cross.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\01.Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FallingStoneTrail.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStone</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Flame1.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Smoke.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Slash_Trail.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FlameSlash_Trail.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_WindField.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\01.WindField</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Temple_Lion.h">
+      <Filter>01. Levels\03. Temple of the Lion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Elemental_Particle.h">
+      <Filter>02. GameObjects\11. Elemental\01. Elemental_Particle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Elemental.h">
+      <Filter>02. GameObjects\11. Elemental</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Elemental_Manager.h">
+      <Filter>02. GameObjects\11. Elemental\00. Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Effigy_Fire.h">
+      <Filter>02. GameObjects\01. Creature\Monster\98. Effigy\01. Effigy_Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ElementalReaction.h">
+      <Filter>02. GameObjects\07. SkillObj\Common\ElementalReaction</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BabaraBasicAttack.h">
+      <Filter>02. GameObjects\07. SkillObj\Babara\BabaraBasicAttack</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Water_Fog.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\EFF_TEST.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\99.TEST_ONLY_CLASS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Barbara_Burst_Magic_Circle.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\02.Barbara</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Effigy_Fire.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\05. Effigy\01. Effigy_Fire</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FallingSpear.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingSpear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FallingSpearTrail.h">
+      <Filter>02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround\FallingSpearTrail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Barbara_Normal_Star.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ItemGlow.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Prototype_include.h">
+      <Filter>99. Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FireCube.h">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Cube</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Gliding_Test.h">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Gliding_Ring.h">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test\Gliding_Ring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Mini_Game.h">
+      <Filter>02. GameObjects\12. Mini_Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Ambor.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\03. Ambor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Ambor.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Ambor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FirePillar.h">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_FireCore.h">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Barbara_Normal_Atk.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\02.Barbara</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Liquid_Splash.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Water.h">
+      <Filter>02. GameObjects\98. Worlds\06. Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dungeon.h">
+      <Filter>02. GameObjects\98. Worlds\07. Dungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DungeonElement.h">
+      <Filter>02. GameObjects\98. Worlds\08. DungeonElement</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_StrongHold_AbyssMage.h">
+      <Filter>01. Levels\04. StrongHold Abyss Mage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_Quest.h">
+      <Filter>01. Levels\05. Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Level_StormTerror.h">
+      <Filter>01. Levels\06. Confront StormTerror</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\CommonNPC.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\NPC_Male</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Accelerating_Ring.h">
+      <Filter>02. GameObjects\12. Mini_Game\Gliding_Test\Accelerating_Ring</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Quest_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Quest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_NPCMale.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\04. NPC_Male</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_NPCFeMale.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\05. NPC_Female</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Dvalin.h">
+      <Filter>02. GameObjects\01. Creature\Monster\97. Dvalin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Dvalin.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\06. Dvalin</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Dvalin.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Monster\03. Dvlain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Swan.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\Swan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Swan.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\06. Swan</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_BigExplosion.h">
+      <Filter>02. GameObjects\07. SkillObj\Effigy_Fire\BigExplosion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireTrsCow.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\08. EffigyFire_TrsCow</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireTrsFish.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\09. EffigyFire_TrsFish</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireAura.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\01. EffigyFire_Aura</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireExplode.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\02. EffigyFire_Explode</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireImpact.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\03. EffigyFire_Impact</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFirePillar.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\04. EffigyFire_Pillar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireProjectile.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\05. EffigyFire_Projectile</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireTrail.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\06. EffigyFire_Trail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFire_MagicCircle.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\07. EffigyFire_MagicCircle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_BarbaraES.h">
+      <Filter>95. Utils\03. AssetFX\04. Character\01. Barbara_ES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_AndriusSavageTornado.h">
+      <Filter>95. Utils\03. AssetFX\03. Andrius\01. Andrius_SavageTornado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_AndriusMeteorite.h">
+      <Filter>95. Utils\03. AssetFX\03. Andrius\02. Andrius_Meteorite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_CircularIndicator.h">
+      <Filter>95. Utils\03. AssetFX\01. Common\04. CircularIndicator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_ShockWave.h">
+      <Filter>95. Utils\03. AssetFX\01. Common\03. ShockWave</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_Tornado.h">
+      <Filter>95. Utils\03. AssetFX\01. Common\01. Tornado</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DebugCheat.h">
+      <Filter>95. Utils\02. DebugCheat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Effigy_Recharge_Trail.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\TextureEff</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireTrsBomb.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\10. EffigyFire_TrsBomb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\TelePort.h">
+      <Filter>02. GameObjects\01. Creature\NonPlayer\TelePort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_TelePort.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\NonPlayer\00.TelePort</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DeliveryQuests.h">
+      <Filter>02. GameObjects\06. Quest\02.DeliveryQuests</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Shop_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_EffigyFireClap.h">
+      <Filter>95. Utils\03. AssetFX\02. EffigyFire\11. EffigyFire_Clap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Alchemy_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Alchemy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Gate.h">
+      <Filter>02. GameObjects\08. EventCollider\02. Gate</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_Meteorite.h">
+      <Filter>95. Utils\03. AssetFX\01. Common\02. Meteorite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ElementalReactor.h">
+      <Filter>95. Utils\04. Dungeon\01. ElementalReactor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Abyss_Mage.h">
+      <Filter>02. GameObjects\01. Creature\Monster\03. Abyss_Mage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Abyss_Mage.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Monster\07. Abyss_Mage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Body_Raiden.h">
+      <Filter>02. GameObjects\02. PartObject\01. Body\Character\04. Raiden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Status_Raiden.h">
+      <Filter>02. GameObjects\02. PartObject\03. Status\Character\05. Raiden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Pole_Narukami.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\02. Pole_Narukami</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Glider_Thunderclap.h">
+      <Filter>02. GameObjects\02. PartObject\04. Glider\Character\04. Thunderclap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Chakra.h">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Chakra</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Cooking_Page.h">
+      <Filter>02. GameObjects\97. UI\Page\Cooking</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Raiden_Symbol.h">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Elemental_Symbol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ElementalReactor_Manager.h">
+      <Filter>95. Utils\04. Dungeon\01. ElementalReactor\ElementalReactor_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DungeonDoor.h">
+      <Filter>95. Utils\04. Dungeon\02. DungeonDoor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GearOperator.h">
+      <Filter>95. Utils\04. Dungeon\06. GearOperator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DungeonPlatform.h">
+      <Filter>95. Utils\04. Dungeon\03. DungeonPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\GearOperator_Manager.h">
+      <Filter>95. Utils\04. Dungeon\06. GearOperator\GearOperator_Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DungeonExit.h">
+      <Filter>95. Utils\04. Dungeon\04. DungeonExit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Raiden_ElementAttack.h">
+      <Filter>02. GameObjects\07. SkillObj\Raiden</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Staff_Elec.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\01. Staff_Elec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Skill_Abyss_Mage_Shield.h">
+      <Filter>02. GameObjects\07. SkillObj\Abyss_Mage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Raiden_Light.h">
+      <Filter>02. GameObjects\07. SkillObj\Raiden\Elemental_Light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DungeonChest.h">
+      <Filter>95. Utils\04. Dungeon\05. DungeonChest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\LineTrap.h">
+      <Filter>02. GameObjects\05. Effect\LineTrap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DvalinPlatform.h">
+      <Filter>02. GameObjects\01. Creature\Monster\97. Dvalin\DvalinPlatform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Staff_Ice.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\02. Staff_Ice</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Staff_Water.h">
+      <Filter>02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\03. Staff_Water</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Lightning.h">
+      <Filter>02. GameObjects\07. SkillObj\Lightning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\ChainLightning.h">
+      <Filter>02. GameObjects\05. Effect\ChainLightning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\DoorPortal.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\BossChest.h">
+      <Filter>95. Utils\04. Dungeon\07. BossChest</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\FX_RaidenES.h">
+      <Filter>95. Utils\03. AssetFX\04. Character\02. Raiden_ES</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Shougun_Trail_TEST.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Mouse.h">
+      <Filter>02. GameObjects\03. Ortho\98. Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Eff_Activate.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Location.h">
+      <Filter>02. GameObjects\08. EventCollider\03. Location</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Public\Raiden_Trail_Add.h">
+      <Filter>02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico">
+      <Filter>98. Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>98. Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="00. MainApp">
+      <UniqueIdentifier>{724690f8-a677-4adb-9cac-8062bdfae5b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels">
+      <UniqueIdentifier>{1db0e4aa-fd17-4625-ab1f-b4947ffb33dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects">
+      <UniqueIdentifier>{b03a9540-4aac-4d83-ac1d-a3f6d4509df1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="97. ShaderFiles">
+      <UniqueIdentifier>{95cfb1e2-7f55-435d-941b-4010080d148d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98. Default">
+      <UniqueIdentifier>{4664bf2e-4095-4576-ab4c-5f57c4037cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99. Headers">
+      <UniqueIdentifier>{b538e349-debd-4a25-826f-5c17ad933b66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\01. Entry">
+      <UniqueIdentifier>{d1d5b1c7-63f6-4529-80c9-4e1b088c62b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\02. World">
+      <UniqueIdentifier>{6d95619b-c45e-4fb6-8659-ea7371defceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\99. Loading">
+      <UniqueIdentifier>{7c0fcbc6-770a-4c27-a9e9-03a3012a4193}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\99. Loading\Loader">
+      <UniqueIdentifier>{c22456f2-8e4b-463e-ba19-847619868894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject">
+      <UniqueIdentifier>{8daf5fb8-046f-4f13-9747-f3f2d7dfa656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho">
+      <UniqueIdentifier>{1febf7a5-d41d-4315-a710-fcbc82f0c031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body">
+      <UniqueIdentifier>{9ad95ef6-d80a-4d75-b098-308c488aae4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon">
+      <UniqueIdentifier>{276071aa-efd4-4b28-abeb-4e21f460cf17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\01. Rect">
+      <UniqueIdentifier>{3285943b-0b53-4f8c-a6aa-96385d01003a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\02. AlphaRect">
+      <UniqueIdentifier>{06be933b-ce27-4bba-90e7-f2989c37ef48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\03. Button">
+      <UniqueIdentifier>{c2fe5d21-af6a-4312-9151-25124e9965b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\04. ButtonAlpha">
+      <UniqueIdentifier>{030e6567-b165-4d97-afcb-10d570538ab8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\99. Camera">
+      <UniqueIdentifier>{120bcc3e-957a-4fd6-89a9-62e06b7f3c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\99. Camera\Camera_Main">
+      <UniqueIdentifier>{b1b960a7-c61d-4cca-99a2-6a816690dfe3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character">
+      <UniqueIdentifier>{db255544-cdfe-4781-b7bf-0d06a8159af7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character">
+      <UniqueIdentifier>{70c4404d-f255-4daf-8b3e-0faf4bba19e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster">
+      <UniqueIdentifier>{38a1db5f-8e10-4518-b363-acefbf56efdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\01. Sword">
+      <UniqueIdentifier>{c0e2d157-7fb3-4618-a3fa-6208df6c4795}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\02. Claymore">
+      <UniqueIdentifier>{8464a845-6724-4057-9b98-8ec7c8f3f1ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\02. Claymore\01. Claymore_Wolfmound">
+      <UniqueIdentifier>{8b2fc428-fbf1-472b-b306-13077d5fdad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\01. Andrius">
+      <UniqueIdentifier>{c25b8ab6-ce2b-4629-a6fa-221ce997284f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\00. DeciderObject">
+      <UniqueIdentifier>{1c8e49cc-7ac6-47e1-ba37-6d2ec456b360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\99. Camera\Camera_Char">
+      <UniqueIdentifier>{503cf846-e24a-4c34-b111-b0a8688b5532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds">
+      <UniqueIdentifier>{37f22308-8f3d-4d4f-8bb2-8d029dc9afcc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\01. World">
+      <UniqueIdentifier>{7ec44341-efbc-49b2-996e-9115c9edb01d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\02. Terrain">
+      <UniqueIdentifier>{171b8e35-afe5-4a2f-b35d-f1a6c2d62227}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory">
+      <UniqueIdentifier>{a93fbb8f-2696-4daa-a8c3-fb420eeec028}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Item">
+      <UniqueIdentifier>{0c1993ce-61c3-4100-be05-ad91dd62c5c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Item\01. Weapon">
+      <UniqueIdentifier>{afea9b05-368b-4182-8fdb-c327ef89d062}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Item\02. Artifact">
+      <UniqueIdentifier>{e4b7e988-c38c-4d81-a939-44897d7f2847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Item\04. Cooking">
+      <UniqueIdentifier>{0a49cfe0-c966-4451-8bdd-d60b8a1c832d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Item\03. Material">
+      <UniqueIdentifier>{6bb93547-1bf6-4e41-9e5c-a07e923a5a59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect">
+      <UniqueIdentifier>{5a890b54-1011-4948-b3f4-21794f1a4c11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\Flame">
+      <UniqueIdentifier>{90e43025-64a3-4541-84e3-fde4e32ffaf2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\96. CharacterController">
+      <UniqueIdentifier>{3dd601ba-80a5-4d52-aa0d-8517cd701fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole">
+      <UniqueIdentifier>{dd43164a-0514-412b-b296-9bdd143271b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\01. Pole_Kunwu">
+      <UniqueIdentifier>{c1e0db34-5ab6-454a-9fff-17d7829f976c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status">
+      <UniqueIdentifier>{5b327ebd-1985-4d17-ab21-0ad7c60fd1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Character">
+      <UniqueIdentifier>{47c44aa6-6821-42ef-a500-b851476b3d6c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Character\04. Diluc">
+      <UniqueIdentifier>{ac4b5c72-bd01-4b0d-b409-80e81e67df66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Character\09. Zhongli">
+      <UniqueIdentifier>{fbe845a4-ff95-4502-a7ac-025a406f5d8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\04. SkyBox">
+      <UniqueIdentifier>{114485c0-b0e4-4f0a-8f35-cc5b50deb32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\02. Slime">
+      <UniqueIdentifier>{5fdf730c-10a8-43ac-9518-1a1290a38bb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\01. Water">
+      <UniqueIdentifier>{29643789-4b12-4720-85be-c17eb8e61b4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Monster">
+      <UniqueIdentifier>{bbe7e2eb-81ea-4966-b245-5ad16ea50dfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj">
+      <UniqueIdentifier>{e1f120d5-e948-4265-96a2-1e799eb12bbf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius">
+      <UniqueIdentifier>{4c941198-94ba-4494-a630-29ee7a832e89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\IceCone">
+      <UniqueIdentifier>{ff507d31-b605-47ba-ba3c-1241d5d1ed75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\WindBlade">
+      <UniqueIdentifier>{97f10929-1aa6-4b8a-9b37-f88ff363ff40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\IceShockWave">
+      <UniqueIdentifier>{d2e3d3ff-f876-43fb-8579-0624a2e09a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\IcePillar">
+      <UniqueIdentifier>{9dcb9883-b941-4acb-bbe4-7d011de2a649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\02. Slime\02. Ice">
+      <UniqueIdentifier>{9911e6fb-a726-4071-b6e8-863686fe4fda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster">
+      <UniqueIdentifier>{d2809756-3e9d-4e9d-9eaa-ebaa81430727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\01. Slime">
+      <UniqueIdentifier>{04db6489-50f5-4d5d-a31b-c0362d1dd07c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli">
+      <UniqueIdentifier>{f4e57928-f4d9-4335-8d11-6c6d1df64afd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\Pillar">
+      <UniqueIdentifier>{4c517354-8b64-4303-82df-382c7fbf290a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\03. ChuChu">
+      <UniqueIdentifier>{2a2f060d-a605-421b-8261-2df50dd3dbd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\03. ChuChu\01. Normal">
+      <UniqueIdentifier>{0376d3eb-763c-4ab4-8ade-dd28386ea362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\FallingStone">
+      <UniqueIdentifier>{71afecbf-95e2-45bc-a393-f68580c1e81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\WindRange">
+      <UniqueIdentifier>{14988f00-7ed2-421f-9872-9af6cae9e9fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\02. Hili">
+      <UniqueIdentifier>{f06cd619-49ad-4677-b069-066eb85b8de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer">
+      <UniqueIdentifier>{d91186e1-48ca-438b-885c-950cc0f9207b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\01. Paimon">
+      <UniqueIdentifier>{9f39177f-e582-4331-9a1b-ed971c94ad7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Diluc">
+      <UniqueIdentifier>{f565eaec-746c-4058-8396-bdcda87c1432}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Diluc\Phoenix">
+      <UniqueIdentifier>{a965ab02-7483-4d64-a3a4-006b832ed40d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\05. UI_Decor">
+      <UniqueIdentifier>{a9dfd574-51a1-4daa-a839-5166ea0744bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\06. Hp_Bar">
+      <UniqueIdentifier>{0d07a35d-83d6-47b9-b4c9-051eac1e9cee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\06. Hp_Bar\00.NormalHealth">
+      <UniqueIdentifier>{729e4bea-0e3a-4e9c-8ff9-66649788599f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\07. DualTex">
+      <UniqueIdentifier>{e0cc0eba-92dc-49b5-ae55-9671b5727c47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\08. InteractionBox">
+      <UniqueIdentifier>{eab7a527-c23e-4ec5-a410-51fc48064264}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\09. Stamina_Bar">
+      <UniqueIdentifier>{13f23378-3909-4ea4-acc2-77a0608f6b43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\10. Damage_Font">
+      <UniqueIdentifier>{e7fc470d-98e0-4d97-8f55-31ea090a1268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\11. Mini_Map">
+      <UniqueIdentifier>{5360dd48-81ee-4db3-b3b0-966e649a5d06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\12. Select_Box">
+      <UniqueIdentifier>{a2d840cb-101b-48ac-ab65-7e19af85d3b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\99. LoadingRect">
+      <UniqueIdentifier>{0e0a09ec-b4ea-4b89-8570-96e9147077a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\04. Inventory\Ground_Item">
+      <UniqueIdentifier>{18f6eb06-9d60-4623-834e-1d0914c131e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\03. WorldElement">
+      <UniqueIdentifier>{0e51a23d-3b89-4d64-9240-cb40fa417300}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\Hit">
+      <UniqueIdentifier>{d1bb323d-3257-476c-804a-f4f9175a8e6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest">
+      <UniqueIdentifier>{7f8b0489-244c-42ba-a6f9-f0a3c13f7eeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest\Manager">
+      <UniqueIdentifier>{86d856d4-fae1-42b2-9329-e68ae32c9084}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest\00.KillQuests">
+      <UniqueIdentifier>{fcdd7446-b014-46fa-a567-393c81d9e1a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest\01.CollectQuests">
+      <UniqueIdentifier>{8af39f0f-c179-4f56-9da9-cefcf036aaeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest\03.InputQuests">
+      <UniqueIdentifier>{d2e14518-2f57-4e3d-92cc-293b20b1a967}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\Rush_Circle">
+      <UniqueIdentifier>{2aaaef26-bf30-41fb-bfee-b97af2ee1487}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature">
+      <UniqueIdentifier>{11764ae2-bd54-48ff-822f-2f704297e6fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster">
+      <UniqueIdentifier>{e72e2426-cab1-4e01-97e5-1647e30b2f62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\00. Slime">
+      <UniqueIdentifier>{d5afe29b-122b-42f7-9b54-8deac0f92a2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\00. Slime\01. Small">
+      <UniqueIdentifier>{e77cd9b5-8882-40b1-ae3d-debfe62b55d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\00. Slime\02. Big">
+      <UniqueIdentifier>{39619b5e-1695-4eea-a279-79b48ef6ae7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\99. Andrius">
+      <UniqueIdentifier>{04cb2778-ac56-4a6e-969a-519b3709c164}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Player">
+      <UniqueIdentifier>{93eb325e-915e-4c4a-9da6-ae28706b8dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer">
+      <UniqueIdentifier>{2b095f6a-4fa5-4499-baf4-1f943a1ca225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\Paimon">
+      <UniqueIdentifier>{d3f597ae-59e5-4d00-a562-9c57280dec08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\AndriusSword">
+      <UniqueIdentifier>{6d126dc9-adea-4cd2-8fb2-81ef4a615808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\Scratch">
+      <UniqueIdentifier>{987fe6a7-4496-48ff-ba44-b1b5a649e852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\Sweep">
+      <UniqueIdentifier>{c6f9004f-4298-4365-b3be-b16565f3adfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect">
+      <UniqueIdentifier>{6cc75687-6347-4e3e-8025-c15469647e60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\Rush">
+      <UniqueIdentifier>{7efb8cb9-2d8a-4050-a4e8-61c7b1a9c7cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\Rush2">
+      <UniqueIdentifier>{3943bc50-c6be-4397-be3b-a3017157baf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils">
+      <UniqueIdentifier>{02a415fd-cb73-4e3b-8841-4b0378f41666}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\01. DebugTool">
+      <UniqueIdentifier>{fc2d830d-806e-45a1-ae44-9fe652373821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\01. DebugTool\ImGui">
+      <UniqueIdentifier>{29d1ea05-7b78-4d65-ad48-8d96d6fe6492}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\Ice_Floor">
+      <UniqueIdentifier>{277f8ff1-c151-4def-8609-6276f84572aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround">
+      <UniqueIdentifier>{e5791973-e9c8-4bf0-8e75-cd09d5d69caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects">
+      <UniqueIdentifier>{8415c367-fe6c-4835-9d25-dac1c18d3902}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\00.Zhongli">
+      <UniqueIdentifier>{21534184-9825-4e0c-8a97-680e9c144df3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\Shield">
+      <UniqueIdentifier>{7243249d-4a64-43d8-9a8f-9e4e9222a725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\02. Kathertyne">
+      <UniqueIdentifier>{831ba824-3496-4cfe-bbb7-bdec6304cd80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\Fog">
+      <UniqueIdentifier>{6ec8066e-6549-45a3-9f4e-7332c5dcf1bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\InProgress">
+      <UniqueIdentifier>{98f7db6a-47e9-4a28-be3b-a1696d3e9370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="96. JsonFiles">
+      <UniqueIdentifier>{8a8263dd-208a-4c0c-8a17-4c4c53aa25db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character\03. Diluc">
+      <UniqueIdentifier>{ab7a7c7f-07f5-45c0-af5f-85de4586caa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character\05. Zhongli">
+      <UniqueIdentifier>{e2345b6c-624e-4e3d-be3a-d83a61e56893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\02. Brute">
+      <UniqueIdentifier>{7c9831de-d418-4a8e-b368-fad6e4d74af8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\04. Brute">
+      <UniqueIdentifier>{7223db06-bbfd-454a-93a4-2f9bc790f82c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider">
+      <UniqueIdentifier>{99ac5fab-ce95-4a46-8025-a103d2159379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider\Character">
+      <UniqueIdentifier>{b784fe7e-612a-4e90-8a75-23d64375312e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider\Character\01. Origin">
+      <UniqueIdentifier>{512fc078-0ef8-428c-9ce0-2565e267d2a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\13. Element_OHD">
+      <UniqueIdentifier>{34089ec5-674b-4481-81cd-3e76f5f0fca1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider\Character\02. Liyue">
+      <UniqueIdentifier>{a0c4cdc7-c69d-40f4-b07a-7db62cb10078}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\04. Catalyst">
+      <UniqueIdentifier>{8e78b486-c626-4bd7-bc53-f3b54f98b8f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Character\01. Barbara">
+      <UniqueIdentifier>{815dbf67-7f21-4e1d-ac69-f5331f35dfd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider\Character\03. Psalmus">
+      <UniqueIdentifier>{2e1223ae-fa99-41a5-858c-4b25d2b9e2a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\01.Diluc">
+      <UniqueIdentifier>{f1e2f27c-b955-4cba-9f89-47e59551544c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\08. EventCollider">
+      <UniqueIdentifier>{fb4692b5-71d6-4adb-9f04-6161d90e736a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\08. EventCollider\01. Updraft">
+      <UniqueIdentifier>{3f71ade8-a666-4f8d-9443-724dc21119f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\08. EventCollider\00. SpawnBox">
+      <UniqueIdentifier>{8b50cd9a-d685-4c43-a337-2b5e82953a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Andrius\Claw">
+      <UniqueIdentifier>{862a7003-57ff-4266-8930-f558b9093541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\05. InstancingElement">
+      <UniqueIdentifier>{321c4d52-51f0-4ad9-b65b-f43321449929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common">
+      <UniqueIdentifier>{49ac3397-1f3e-412a-8863-ae386e9041a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\00.ElementShields">
+      <UniqueIdentifier>{6a749567-2c86-4cd0-85da-e8bd6ce0fd02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff">
+      <UniqueIdentifier>{8fae24f9-0eb3-4349-b6cd-23da2258a09a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\00.Zhongli">
+      <UniqueIdentifier>{02422f19-e161-4342-bcb7-1a99e1e167aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\01.Diluc">
+      <UniqueIdentifier>{fc0f72fa-4377-4877-9c7c-85ffa34951a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\03. SlashTrail">
+      <UniqueIdentifier>{fa18e8b8-3e24-4f8a-b91c-542d09b4b955}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\MeshEffects\02.Common\01.WindField">
+      <UniqueIdentifier>{222e454d-05ba-4519-a2fb-f2317508dd68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\99.TEST_ONLY_CLASS">
+      <UniqueIdentifier>{99227b05-bf10-4f5a-9759-d627640e5f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\11. Elemental">
+      <UniqueIdentifier>{66c3f36d-d0c0-476e-84e2-17d1e2cda5db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\11. Elemental\00. Manager">
+      <UniqueIdentifier>{a931c73c-e7e0-4663-9f5d-02a44e79558a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\98. Effigy">
+      <UniqueIdentifier>{1c8f86cd-761e-4ed6-b4cf-c5a23ed612a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\98. Effigy\01. Effigy_Fire">
+      <UniqueIdentifier>{4f5ac740-356d-49df-af43-5f2e176cdc54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Common">
+      <UniqueIdentifier>{11f5e44c-cb07-418c-8e81-96f2c6dd6501}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Common\ElementalReaction">
+      <UniqueIdentifier>{42e99a76-a4ab-482f-ab83-6b80b6e2f00c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Babara">
+      <UniqueIdentifier>{537bd56d-8fdc-45c5-acb8-a6a1ca66e40c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Babara\BabaraBasicAttack">
+      <UniqueIdentifier>{2d3b92f4-7a18-4025-9e64-3f8812da711d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\99.TEST_ONLY_CLASS">
+      <UniqueIdentifier>{99227b05-bf10-4f5a-9759-d627640e5f87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\02.Barbara">
+      <UniqueIdentifier>{fff3e335-30dd-45eb-aaf9-3e9fae19daf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\03.Reserved">
+      <UniqueIdentifier>{c74a124a-a335-4773-af01-a9741b162a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\TestEffect\TextureEff\04.Common">
+      <UniqueIdentifier>{75e0c9ed-39af-47c6-bea2-aded1cf15de1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\05. Effigy">
+      <UniqueIdentifier>{800d6d79-e927-43b7-a63e-4f2ab4203eae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\05. Effigy\01. Effigy_Fire">
+      <UniqueIdentifier>{3681ef15-bfb2-4d58-b6a7-6426b7e5e6a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\FallingSpear">
+      <UniqueIdentifier>{a49c8b56-44f2-4d82-8eec-269654e18342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Zhongli\FallingStoneBackGround\FallingSpearTrail">
+      <UniqueIdentifier>{81ed19ca-4c3c-4769-96bb-760309c6c925}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\Katheryne">
+      <UniqueIdentifier>{baea501c-a0de-4a8a-b5ca-79999edabc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI">
+      <UniqueIdentifier>{12774def-b6a7-4bec-8cb3-5d44b63a28bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\99.Manager">
+      <UniqueIdentifier>{0fc33ab6-ea69-43db-9a23-0f7a9523650b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page">
+      <UniqueIdentifier>{89495324-98d7-4fab-a8ab-1995ae6558e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Paimon">
+      <UniqueIdentifier>{973359c3-cd2e-4e90-92d1-a29f8468c3c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\TeamConfig">
+      <UniqueIdentifier>{3f96e633-10d9-41b0-8b17-a512d803c355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Gacha">
+      <UniqueIdentifier>{012eb736-12ca-408c-b00f-878d17278710}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Gacha\Result">
+      <UniqueIdentifier>{991c05e4-77f2-4be1-bfaf-66cebffa1b8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Main">
+      <UniqueIdentifier>{fa77429f-5982-4425-b539-a0c6309e2853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Main\TeamAssocButtons">
+      <UniqueIdentifier>{88018f2c-f347-4b87-a214-0f2eb5dfa19b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Dialogue">
+      <UniqueIdentifier>{0fabe01a-63e2-4c45-9bc6-9b368eeac585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Effigy_Fire">
+      <UniqueIdentifier>{e336ad8f-322a-4df2-bffa-bce35a847755}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Cube">
+      <UniqueIdentifier>{664d20a2-7b4e-4131-9572-822ddbd6be06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\Ambor">
+      <UniqueIdentifier>{15d36252-17a1-46d2-b49b-362de8c4c263}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\03. Ambor">
+      <UniqueIdentifier>{7eca2c2b-fdcf-4979-a176-53f99f886d9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\12. Mini_Game">
+      <UniqueIdentifier>{62d18600-6193-436b-bc92-771ba15b3ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\12. Mini_Game\Gliding_Test">
+      <UniqueIdentifier>{61a6f15d-9ade-4f6b-afd6-28679503a3a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\12. Mini_Game\Gliding_Test\Gliding_Ring">
+      <UniqueIdentifier>{4740405c-726e-4170-980d-647f74bedb5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Pillar">
+      <UniqueIdentifier>{3a21d067-f0b0-45ab-ae3e-0260debb48c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Effigy_Fire\Fire_Core">
+      <UniqueIdentifier>{64e972de-cfa9-4bdd-b21e-4e4ad903970f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\06. Water">
+      <UniqueIdentifier>{2bd6cfeb-b250-42d4-8e5d-070df8becb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\07. Dungeon">
+      <UniqueIdentifier>{8a2f39dc-6ad0-4b0c-9223-2ea99c4e8126}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\98. Worlds\08. DungeonElement">
+      <UniqueIdentifier>{19291319-0e63-496b-b5e9-2452191f5366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\04. StrongHold Abyss Mage">
+      <UniqueIdentifier>{b604ee22-f86b-4118-9fc5-45ff29e1ad42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\03. Temple of the Lion">
+      <UniqueIdentifier>{d83ea64c-de71-4dde-ad9f-23365aacaa82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\05. Quest">
+      <UniqueIdentifier>{f24332ed-ddde-49db-b99b-ea892a137d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01. Levels\06. Confront StormTerror">
+      <UniqueIdentifier>{faa28280-426b-4309-9f30-50a188da6ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Monster\01. Andrius">
+      <UniqueIdentifier>{93f73688-e73b-4090-aa6e-ccb38d916702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Monster\02. Effigy_Fire">
+      <UniqueIdentifier>{141ab39f-330f-4704-989b-3dff6cf845f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\12. Mini_Game\Gliding_Test\Accelerating_Ring">
+      <UniqueIdentifier>{1d504a8b-7d95-4a3f-8283-fa2effdbba24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Quest">
+      <UniqueIdentifier>{45e24db1-19ba-49ac-80e2-d56ddc5c1d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\04. NPC_Male">
+      <UniqueIdentifier>{cecbcb78-1ff0-461a-bf8f-a556dae8532a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\05. NPC_Female">
+      <UniqueIdentifier>{a57dda0e-670e-413f-9454-5e5df6112ccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\NPC_Male">
+      <UniqueIdentifier>{005ef081-b61f-43fd-97c7-6cc63d94634e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Monster\03. Dvlain">
+      <UniqueIdentifier>{4ce48571-69c5-4586-ab1b-723c61b86808}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\Swan">
+      <UniqueIdentifier>{789fa214-0720-4f61-bd15-78a1d5b4a005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\06. Swan">
+      <UniqueIdentifier>{74b8f173-fabb-43a5-a401-30dfa3f60978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\97. Dvalin">
+      <UniqueIdentifier>{838df941-8eac-491d-bec7-ecad003a3602}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character\02. Barbara">
+      <UniqueIdentifier>{8dab3b20-e31f-4856-840f-3a6cd5201eaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character\01. Traveler">
+      <UniqueIdentifier>{1373cefb-9e7f-4f17-a653-c3294c7b651d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Effigy_Fire\BigExplosion">
+      <UniqueIdentifier>{603b417f-a084-4932-82af-9623c25e3988}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX">
+      <UniqueIdentifier>{a0f2a85d-c328-4bc2-a877-2370bf610893}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\01. Common">
+      <UniqueIdentifier>{a331c5ec-41fc-4a66-a7df-65ad366a36e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\01. Common\01. Tornado">
+      <UniqueIdentifier>{a80ab40d-f22b-4450-9db1-a4944bc8f882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\01. Common\02. Meteorite">
+      <UniqueIdentifier>{9d05ad46-a629-4cc5-8338-a5f549239092}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\01. Common\03. ShockWave">
+      <UniqueIdentifier>{4d9f2f02-6e66-42ac-b7b4-0b54b60e5aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\01. Common\04. CircularIndicator">
+      <UniqueIdentifier>{54259ab0-b50b-4778-a90b-969b49b2d232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire">
+      <UniqueIdentifier>{11a4ff11-78ff-4bc8-baa5-18941a3c9bdc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\01. EffigyFire_Aura">
+      <UniqueIdentifier>{67d4e14b-3510-4f9c-ab30-2060b6a54351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\02. EffigyFire_Explode">
+      <UniqueIdentifier>{dddcbd03-72bb-4599-a2ef-8bb2e0397427}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\03. EffigyFire_Impact">
+      <UniqueIdentifier>{c6a75563-0584-4364-801c-5e5cb2d6d0bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\04. EffigyFire_Pillar">
+      <UniqueIdentifier>{575e8fc4-cd66-46c6-8b63-a2a5ab58569e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\05. EffigyFire_Projectile">
+      <UniqueIdentifier>{80a2e477-f368-4063-bbd4-618f10a3da44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\06. EffigyFire_Trail">
+      <UniqueIdentifier>{798b3ad4-9d8c-4ebb-ac99-a43fe7bc358d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\07. EffigyFire_MagicCircle">
+      <UniqueIdentifier>{cc464e03-3ca3-47a2-a9b1-829eb8564d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\08. EffigyFire_TrsCow">
+      <UniqueIdentifier>{7c78c6c2-8652-477b-ac05-f23b0d22609f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\09. EffigyFire_TrsFish">
+      <UniqueIdentifier>{1e3313bd-e8cb-484e-93c1-14876f0dfa61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\03. Andrius">
+      <UniqueIdentifier>{01177a9f-2a8f-4a8d-88cc-7256e48d6dca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\03. Andrius\01. Andrius_SavageTornado">
+      <UniqueIdentifier>{d8028c82-fc03-46af-bef1-1880b16275fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\03. Andrius\02. Andrius_Meteorite">
+      <UniqueIdentifier>{1b7d3cbe-038f-4c6f-8976-391efb8fa78d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\04. Character">
+      <UniqueIdentifier>{271714fe-189f-419a-947f-a9fd3403a4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\04. Character\01. Barbara_ES">
+      <UniqueIdentifier>{86ae74c0-38f9-4698-a053-20fbffdf7004}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\02. DebugCheat">
+      <UniqueIdentifier>{fa43e75b-ec93-49ab-bce4-c1d0ac47912b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\10. EffigyFire_TrsBomb">
+      <UniqueIdentifier>{36a4ae90-7ac1-416e-9afc-6c502e7543f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\NonPlayer\TelePort">
+      <UniqueIdentifier>{50a6ce8f-ed07-45ee-b8c7-d033b9771441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\NonPlayer\00.TelePort">
+      <UniqueIdentifier>{ee5721fd-2c11-4b27-9a05-d4a544a45139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Shop">
+      <UniqueIdentifier>{77cf19dd-2fe0-430a-9c13-ad10e0411500}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Alchemy">
+      <UniqueIdentifier>{2cac4e76-8659-4174-9e17-1ad990aa9975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\06. Quest\02.DeliveryQuests">
+      <UniqueIdentifier>{5b8ae785-10d9-4ee6-bdef-f8e634fcd188}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\02. EffigyFire\11. EffigyFire_Clap">
+      <UniqueIdentifier>{eaa04e27-0335-44c2-b263-18484bed0b2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\04. Glider\Character\04. Thunderclap">
+      <UniqueIdentifier>{f5e23578-90c3-44a7-ac32-1cadcbfe10df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Character\03. Pole\02. Pole_Narukami">
+      <UniqueIdentifier>{4143d74c-daa8-49fd-b2a8-bcc27db07f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Character\04. Raiden">
+      <UniqueIdentifier>{fa786202-e7c5-4a73-9512-2dd360f088f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\03. Status\Character\05. Raiden">
+      <UniqueIdentifier>{502006d9-64f0-42e6-93e4-5bb03247013d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\08. EventCollider\02. Gate">
+      <UniqueIdentifier>{7213b946-394c-49b2-b80c-eddb4499b765}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\06. Dvalin">
+      <UniqueIdentifier>{c5ff3621-c65e-4ff7-a332-e7f58d75dfc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\01. Body\Monster\07. Abyss_Mage">
+      <UniqueIdentifier>{7ae7a548-1157-4136-ac20-5eac23bccb9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\03. Abyss_Mage">
+      <UniqueIdentifier>{5fcdc1f4-dae6-4b0e-8e52-17ad75abcce7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Raiden">
+      <UniqueIdentifier>{538b2fcd-ad61-4eef-ba0f-30bb930ee4da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Raiden\Chakra">
+      <UniqueIdentifier>{6081ca36-cdb6-4625-b837-46f51aa73141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\97. UI\Page\Cooking">
+      <UniqueIdentifier>{f3b5a097-825e-4938-b848-dc4ec71a7574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Raiden\Elemental_Symbol">
+      <UniqueIdentifier>{0c12dcf5-109b-4a9f-9b8e-9591f4a87d71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon">
+      <UniqueIdentifier>{de5a1e58-a4a7-4e5e-a214-f923f7478ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\02. DungeonDoor">
+      <UniqueIdentifier>{e25ef0e0-aaee-4eda-9bf1-b45159f6fed6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\03. DungeonPlatform">
+      <UniqueIdentifier>{7df8d70a-b258-460e-b511-f0e12246dca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Raiden">
+      <UniqueIdentifier>{4013afaf-ab68-4a2d-b9cc-0cd8f2efc473}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute">
+      <UniqueIdentifier>{4b06e7de-7467-4f18-a393-c4d67b4c2f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\01. Shield">
+      <UniqueIdentifier>{59d42336-0dfa-4428-8b08-b031cafeefd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\03. Brute\02. Axe">
+      <UniqueIdentifier>{fbeca3eb-162e-4f46-9276-bf4a40de9232}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage">
+      <UniqueIdentifier>{a0e3eec6-defa-4bf5-91ed-2c9c2081bcc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\01. Staff_Elec">
+      <UniqueIdentifier>{f10f1084-2272-453d-9528-e8050c0e4ba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\02. Staff_Ice">
+      <UniqueIdentifier>{94760c9b-9b19-48f4-9952-4ffdd898096d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\02. PartObject\02. Weapon\Monster\04. Abyss_Mage\03. Staff_Water">
+      <UniqueIdentifier>{87c0b05f-51d1-42df-8efd-10184cf59d3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Abyss_Mage">
+      <UniqueIdentifier>{0ebcd972-3d36-4b65-8086-3c397dc4fe9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Raiden\Elemental_Light">
+      <UniqueIdentifier>{afb33738-51e8-4952-8f00-7806911d4b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\04. DungeonExit">
+      <UniqueIdentifier>{676f2f24-8e5c-4d80-ae85-e8ab152d8824}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\05. DungeonChest">
+      <UniqueIdentifier>{c3d9d5ea-32cb-48cf-b6e7-36919fa034eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\06. GearOperator">
+      <UniqueIdentifier>{0b047aee-0b11-46cc-a853-7696ee4cd0ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\06. GearOperator\GearOperator_Manager">
+      <UniqueIdentifier>{7afc3cb6-6c4b-4097-ae58-a856c75ef36e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\LineTrap">
+      <UniqueIdentifier>{7dc765aa-0652-49fa-bb6a-5270a9acb80e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\97. Dvalin\DvalinPlatform">
+      <UniqueIdentifier>{eb68d9ca-0897-4f98-b926-9c570c9dbf92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\11. Elemental\01. Elemental_Particle">
+      <UniqueIdentifier>{c1b6b08a-3ef0-40b2-8fdb-8bcdc248305c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\05. Abyss_Mage">
+      <UniqueIdentifier>{378f2750-c27d-4452-be7c-1d2ecb50d425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\06. Dvalin">
+      <UniqueIdentifier>{ab03ae63-31a9-461e-9059-00768d59d8df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\06. Dvalin\01. Dvalin_Meteorite">
+      <UniqueIdentifier>{fa474ad8-45e4-4df4-98cc-d96495eea504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\07. SkillObj\Lightning">
+      <UniqueIdentifier>{bad8318b-b137-4e2d-a69b-0384302572bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\05. Effect\ChainLightning">
+      <UniqueIdentifier>{36c00a65-1688-4b0f-b759-8ecc1f53815d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\01. ChuChu">
+      <UniqueIdentifier>{5ea680df-94cd-486f-8019-db4831281a9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\01. Creature\Monster\01. ChuChu\01. Normal">
+      <UniqueIdentifier>{f76d5486-d309-4a07-b760-f67652f3465e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\07. BossChest">
+      <UniqueIdentifier>{c10cd2ce-d1ed-4515-b221-4559350a6f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\03. AssetFX\04. Character\02. Raiden_ES">
+      <UniqueIdentifier>{cc40d1af-5b0d-47ac-b9c0-9456e766610c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\03. Ortho\98. Mouse">
+      <UniqueIdentifier>{b87829eb-92e4-4c36-b4b5-426c584f2fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\01. ElementalReactor">
+      <UniqueIdentifier>{01bd3349-dd53-4230-9eb4-60e9b57653e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="95. Utils\04. Dungeon\01. ElementalReactor\ElementalReactor_Manager">
+      <UniqueIdentifier>{1046f9a2-d73a-4769-b4ca-e872ea875578}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObjects\08. EventCollider\03. Location">
+      <UniqueIdentifier>{5d689566-6cd0-46f8-ba1a-f5fbffba77fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>98. Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Reference\Resources\Data\Json\Item_Info.json">
+      <Filter>96. JsonFiles</Filter>
+    </None>
+  </ItemGroup>
+</Project>

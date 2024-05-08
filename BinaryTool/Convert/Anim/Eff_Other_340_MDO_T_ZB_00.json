@@ -1,0 +1,295 @@
+{
+  "m_Shader": {
+    "m_FileID": 2,
+    "m_PathID": -4133794896120519598,
+    "Name": "miHoYo/Particles/Dissolve_4Texs_Edge_New",
+    "IsNull": false
+  },
+  "m_SavedProperties": {
+    "m_TexEnvs": {
+      "_BaseTex": {
+        "m_Texture": {
+          "m_FileID": 1,
+          "m_PathID": 3705788385337472694,
+          "Name": "Eff_Shougun_Symbol_02",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.2,
+          "Y": 1.2
+        },
+        "m_Offset": {
+          "X": -0.1,
+          "Y": -0.1
+        }
+      },
+      "_DissolveTex": {
+        "m_Texture": {
+          "m_FileID": 3,
+          "m_PathID": 6461355962747338457,
+          "Name": "Eff_Ice_03_NoMipmap",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 0.2,
+          "Y": 4.0
+        },
+        "m_Offset": {
+          "X": 1.55,
+          "Y": 0.0
+        }
+      },
+      "_DistortionMaskTex": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_DistortionTexRG": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_MaskTex": {
+        "m_Texture": {
+          "m_FileID": 1,
+          "m_PathID": 3705788385337472694,
+          "Name": "Eff_Shougun_Symbol_02",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_NoiseTex": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_PatternTex": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_texcoord": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      }
+    },
+    "m_Ints": null,
+    "m_Floats": {
+      "_Alpha": 1.0,
+      "_AlphaBrightness": 3.79,
+      "_AlphaEdgeFade": 20.0,
+      "_AlphaFadeByDistanceToggle": 0.0,
+      "_AlphaFadeDistance": 2.0,
+      "_AlphaFadeDistanceInvertToggle": 0.0,
+      "_AlphaFadeOffset": 0.0,
+      "_AlphaSoftedgePower": 1.0,
+      "_AlphaSoftedgeScale": 1.0,
+      "_AlphaSoftedgeToggle": 0.0,
+      "_BaseTexAlphaBrightness": 1.0,
+      "_BaseTexAlphaChannelSwitch": 3.0,
+      "_BaseTexColorChannelSwitch": 2.0,
+      "_BaseTexURandomToggle": 0.0,
+      "_BaseTexVRandomToggle": 0.0,
+      "_BaseTex_Uspeed": 0.0,
+      "_BaseTex_Vspeed": 0.0,
+      "_BlendOP": 0.0,
+      "_ColorBrightness": 3.34,
+      "_Cull": 0.0,
+      "_DepthFade": 1.0,
+      "_DepthThresh": 1.0,
+      "_DesaturateFrac": 0.0,
+      "_DissolveEdgeWidth": 1.0,
+      "_DissolveRemapMin": 0.0,
+      "_DissolveRemapToggle": 0.0,
+      "_DissolveTexChannelSwitch": 0.0,
+      "_DissolveTexUVRandomToggle": 0.0,
+      "_DissolveTex_Uspeed": 1.0,
+      "_DissolveTex_Vspeed": 0.0,
+      "_DissolveValue": 0.056,
+      "_DistortionGScaler": -1.0,
+      "_DistortionMaskChannelToggle": 1.0,
+      "_DistortionOpacity": 0.0,
+      "_DistortionRScaler": -1.0,
+      "_DistortionTexRG_Uspeed": 10.0,
+      "_DistortionTexRG_Vspeed": 0.0,
+      "_DstBlendMode": 10.0,
+      "_EffectedByFog": 0.0,
+      "_Fresnal_Power": -0.44,
+      "_Fresnal_Scale": 0.05,
+      "_FresnelPower": 1.0,
+      "_FresnelScale": 1.0,
+      "_GlintAdd": 0.1,
+      "_GlintBrightness": 0.2,
+      "_GlintFrequency": 2.0,
+      "_GlintToggle": 1.0,
+      "_GrainTexChannelSwitch": 1.0,
+      "_GrainTexToggle": 1.0,
+      "_GrainTex_Uspeed": 0.0,
+      "_GrainTex_Vspeed": 0.0,
+      "_LerpAlphaScaler": 3.77,
+      "_MHYZBias": -0.2,
+      "_MaskTexBlendModeToggle": 0.0,
+      "_MaskTexBrightness": 10.0,
+      "_MaskTexChannelSwitch": 1.0,
+      "_MaskTexToggle": 1.0,
+      "_MaskTex_Uspeed": 0.0,
+      "_MaskTex_Vspeed": 0.0,
+      "_MotionVectorsAlphaCutoff": 0.1,
+      "_NoiseIntensityOnMask": 0.0,
+      "_NoiseTexChannelSwitch": 0.0,
+      "_NoiseTexToggle": 0.0,
+      "_NoiseTexToggleOnBaseTex": 0.0,
+      "_NoiseTexUVRandomToggle": 0.0,
+      "_NoiseTex_Uspeed": 0.0,
+      "_NoiseTex_Vspeed": 0.0,
+      "_Noise_Brightness": 0.0,
+      "_Noise_Offset": 0.0,
+      "_NormalIntensity": 1.0,
+      "_NormalMapToggle": 0.0,
+      "_PatternAndFresnelToggle": 0.0,
+      "_PatternBrightness": 1.96,
+      "_PatternTexChannelSwitch": 0.0,
+      "_PatternTexToggle": 1.0,
+      "_PolygonOffsetFactor": 0.0,
+      "_PolygonOffsetUnit": 0.0,
+      "_SOFTPARTICLES": 0.0,
+      "_SrcBlendMode": 5.0,
+      "_UseCustom2ColorToggle": 0.0,
+      "_Ztest": 4.0,
+      "_Zwrite": 0.0
+    },
+    "m_Colors": {
+      "_ColorFront": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_DayColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_DissolveEdgeColor": {
+        "r": 0.65284383,
+        "g": 0.65417314,
+        "b": 0.8455882,
+        "a": 1.0
+      },
+      "_FresnelColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "_LerpColorBack": {
+        "r": 1.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 1.0
+      },
+      "_LerpColorDark": {
+        "r": 0.12164789,
+        "g": 0.14040698,
+        "b": 0.3308823,
+        "a": 1.0
+      },
+      "_LerpColorLight": {
+        "r": 0.7950303,
+        "g": 0.6544118,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_MainColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_MeshParticleColorArray": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_ParticleCustomProp0": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_ParticleCustomProp1": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      }
+    }
+  },
+  "m_Name": "Eff_Other_340_MDO_T_ZB_00",
+  "Name": "Eff_Other_340_MDO_T_ZB_00"
+}

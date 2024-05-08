@@ -1,0 +1,271 @@
+﻿#include "stdafx.h"
+#include "Body_Swan.h"
+
+#include "Bone.h"
+#include "GameInstance.h"
+
+#include "Camera_Main.h"
+
+#define	HAIR_MESH_INDEX 1
+
+CBody_Swan::CBody_Swan(ID3D11Device* pDevice, ID3D11DeviceContext* pContext)
+	: CPart_Body(pDevice, pContext)
+{
+}
+
+CBody_Swan::CBody_Swan(const CBody_Swan& rhs)
+	: CPart_Body(rhs)
+{
+}
+
+HRESULT CBody_Swan::Invalidate_Animation(_float fTimeDelta)
+{
+	FSM_NPC_STATE eState = static_cast<FSM_NPC_STATE>(m_pParentFSMCom->Get_CurrentState());
+	
+	_float fRate = 0.f;
+
+	switch (eState)
+	{
+	case FSM_NPC_SOLIDER_IDLE:
+		m_pModelCom->Set_ConvertSpeed(3.f);
+		m_pModelCom->Set_Animation(46);
+		m_pModelCom->Play_PlayerRootAnimation(TRUE, m_pParentTransformCom, fTimeDelta, m_vRootTranslation);
+		break;
+	case FSM_NPC_SOLIDER_START:
+	{
+		m_pModelCom->Set_ConvertSpeed(5.f);
+		m_pModelCom->Set_Animation(43);
+		_float fRate = m_pModelCom->Play_PlayerRootAnimation(FALSE, m_pParentTransformCom, fTimeDelta * 0.8f, m_vRootTranslation);
+
+		if (fRate >= m_pModelCom->Get_AnimationDuration(43))
+		{
+			m_pParentFSMCom->Change_ForceState(FSM_NPC_SOLIDER_LOOP);
+		}
+	}
+	break;
+
+	case FSM_NPC_SOLIDER_LOOP:
+	{
+		m_pModelCom->Set_ConvertSpeed(5.f);
+		m_pModelCom->Set_Animation(44);
+		_float fRate = m_pModelCom->Play_PlayerRootAnimation(FALSE, m_pParentTransformCom, fTimeDelta * 0.8f, m_vRootTranslation);
+
+		if (fRate >= m_pModelCom->Get_AnimationDuration(44))
+		{
+			m_pParentFSMCom->Change_ForceState(FSM_NPC_SOLIDER_END);
+		}
+	}
+	break;
+
+	case FSM_NPC_SOLIDER_END:
+	{
+		m_pModelCom->Set_ConvertSpeed(5.f);
+		m_pModelCom->Set_Animation(42);
+		_float fRate = m_pModelCom->Play_PlayerRootAnimation(FALSE, m_pParentTransformCom, fTimeDelta * 0.8f, m_vRootTranslation);
+
+		if (fRate >= m_pModelCom->Get_AnimationDuration(42))
+		{
+			m_pParentFSMCom->Change_ForceState(FSM_NPC_SOLIDER_IDLE);
+		}
+	}
+
+	}
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::Add_Component(void* pArg)
+{
+	if (FAILED(__super::Add_Component(pArg)))
+		return E_FAIL;
+
+	/* For.Com_Collider_OBB */
+	CBounding_OBB::BOUNDING_OBB_DESC		BoundingDesc = {};
+	BoundingDesc.vExtents = _float3(0.2f, 0.2f, 0.2f);
+	BoundingDesc.vCenter = _float3(0.f, BoundingDesc.vExtents.y, 0.f);
+	BoundingDesc.vRadians = _float3(0.f, XMConvertToRadians(45.f), 0.f);
+
+	if (FAILED(CGameObject::Add_Component(LEVEL_STATIC, TEXT("Prototype_Component_Collider_OBB"),
+		TEXT("Com_Collider_OBB"), (CComponent**)&m_pColliderCom, &BoundingDesc)))
+		return E_FAIL;
+
+	m_pGameInstance->Add_Collider_Object(COLL_NPC_BODY, &m_iColliderID, m_pColliderCom, this);
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::Initialize_Prototype()
+{
+	if (FAILED(__super::Initialize_Prototype()))
+		return E_FAIL;
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::Initialize_Clone(void* pArg)
+{
+	if (FAILED(__super::Initialize_Clone(pArg)))
+		return E_FAIL;
+
+	if (FAILED(Add_Component(pArg)))
+		return E_FAIL;
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::PreviousTick(_float fTimeDelta)
+{
+	if (FAILED(__super::PreviousTick(fTimeDelta)))
+		return E_FAIL;
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::Tick(_float fTimeDelta)
+{
+	if (FAILED(__super::Tick(fTimeDelta)))
+		return E_FAIL;
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::LateTick(_float fTimeDelta)
+{
+	if (FAILED(__super::LateTick(fTimeDelta)))
+		return E_FAIL;
+
+	return S_OK;
+}
+
+HRESULT CBody_Swan::Render()
+{
+	if (FAILED(CPart_Body::Bind_ShaderResources()))
+		return E_FAIL;
+
+	_uint		iNumMeshes = m_pModelCom->Get_NumMeshes();
+
+	_bool	bLightMap = { };
+	_bool	bFaceMesh = { };
+	_float	fRampIndex = { -1.f };
+	for (size_t siMesh = 0; siMesh < iNumMeshes; siMesh++)
+	{
+		/* Exception Effect Eye */
+		if (m_eTypeID == CTY_PLAYER && (m_iFaceMeshIndex - 1 == siMesh || m_iFaceMeshIndex - 2 == siMesh))
+			continue;
+
+		if (m_eTypeID == CTY_MONSTER && m_iFaceMeshIndex - 1 == siMesh)
+			continue;
+
+		if (FAILED(m_pModelCom->Bind_Material(m_pShaderCom, "g_DiffuseTexture", static_cast<_uint>(siMesh), TEXTURETYPE::aiTextureType_DIFFUSE)))
+			continue;
+
+		if (FAILED(m_pModelCom->Bind_Material(m_pShaderCom, "g_LightMapTexture", static_cast<_uint>(siMesh), TEXTURETYPE::aiTextureType_LIGHTMAP)))
+		{
+			if (FAILED(m_pShaderCom->Bind_RawValue("g_bLightMapTexture", &(bLightMap = FALSE), sizeof _bool)))
+				return E_FAIL;
+		}
+		else
+		{
+			if (FAILED(m_pShaderCom->Bind_RawValue("g_bLightMapTexture", &(bLightMap = TRUE), sizeof _bool)))
+				return E_FAIL;
+		}
+
+		if (FAILED(m_pShaderCom->Bind_RawValue("g_bFaceMesh", &(bFaceMesh = (m_iFaceMeshIndex == siMesh)), sizeof _bool)))
+			return E_FAIL;
+
+		if (FAILED(m_pShaderCom->Bind_RawValue("g_fRampIndex",
+			&(fRampIndex = (siMesh != HAIR_MESH_INDEX ? (m_eCreatureID * 2.f) : ((m_eCreatureID * 2.f) + 1.f))), sizeof _float)))
+			return E_FAIL;
+
+		if (FAILED(m_pModelCom->Bind_BoneMatrices(static_cast<_uint>(siMesh), m_pShaderCom, "g_BoneMatrices")))
+			return E_FAIL;
+
+		if (m_bPetrification == FALSE)
+		{
+			if (m_fDissolve == 0.f)
+			{
+				if (siMesh == 3)
+				{
+					if (FAILED(m_pShaderCom->Begin(VTXANIMMESH_BROWNHAIR)))
+						return E_FAIL;
+				}
+				else
+				{
+					if (FAILED(m_pShaderCom->Begin(VTXANIMMESH_RAMP)))
+						return E_FAIL;
+				}
+			}
+			else
+			{
+				if (FAILED(m_pShaderCom->Bind_RawValue("g_fDissolve", &m_fDissolve, sizeof _float)))
+					return E_FAIL;
+
+				if (FAILED(m_pShaderCom->Bind_RawValue("g_fDissolveSize", &m_fDissolveSize, sizeof _float)))
+					return E_FAIL;
+
+				if (FAILED(m_pShaderCom->Bind_RawValue("g_vDissolveColor", &m_vDissolveColor, sizeof _float3)))
+					return E_FAIL;
+
+				if (FAILED(m_pDissolveCom->Bind_ShaderCurrentTexture(m_pShaderCom, "g_DissolveTexture")))
+					return E_FAIL;
+
+				if (FAILED(m_pShaderCom->Begin(VTXANIMMESH_RAMP_DISSOLVE)))
+					return E_FAIL;
+			}
+		}
+		else
+		{
+			if (FAILED(m_pPetrificationCom->Bind_ShaderCurrentTexture(m_pShaderCom, "g_PetrificationTexture")))
+				return E_FAIL;
+
+			if (FAILED(m_pShaderCom->Begin(VTXANIMMESH_PETRIFICATION)))
+				return E_FAIL;
+		}
+
+		if (FAILED(m_pModelCom->Render(static_cast<_uint>(siMesh))))
+			return E_FAIL;
+	}
+
+	return S_OK;
+}
+
+void CBody_Swan::Release_ColliderID()
+{
+	HRESULT hr = m_pGameInstance->Release_Collider_Object(COLL_NPC_BODY, m_iColliderID);
+
+	if (FAILED(hr))
+		cout << "Failed Swan Body COLL_NPC_BODY" << endl;
+	else
+		cout << "Release Swan Body COLL_NPC_BODY" << endl;
+}
+
+CBody_Swan* CBody_Swan::Create(ID3D11Device* pDevice, ID3D11DeviceContext* pContext)
+{
+	CBody_Swan* pInstance = new CBody_Swan(pDevice, pContext);
+
+	if (FAILED(pInstance->Initialize_Prototype()))
+	{
+		MSG_BOX(TEXT("Failed to Create : CBody_Swan"));
+		Safe_Release(pInstance);
+	}
+
+	return pInstance;
+}
+
+CGameObject* CBody_Swan::Clone(void* pArg)
+{
+	CBody_Swan* pInstance = new CBody_Swan(*this);
+
+	if (FAILED(pInstance->Initialize_Clone(pArg)))
+	{
+		MSG_BOX(TEXT("Failed to Clone : CBody_Swan"));
+		Safe_Release(pInstance);
+	}
+
+	return pInstance;
+}
+
+void CBody_Swan::Free()
+{
+	__super::Free();
+}

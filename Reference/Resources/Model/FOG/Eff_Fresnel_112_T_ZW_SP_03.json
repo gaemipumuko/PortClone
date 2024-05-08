@@ -1,0 +1,270 @@
+{
+  "m_Shader": {
+    "m_FileID": 1,
+    "m_PathID": -883023282452132795,
+    "Name": "miHoYo/Particles/Freasnal_Screen_Cube_New",
+    "IsNull": false
+  },
+  "m_SavedProperties": {
+    "m_TexEnvs": {
+      "_CubeMap": {
+        "m_Texture": {
+          "m_FileID": 4,
+          "m_PathID": -7618616226993110946,
+          "Name": "",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 9.0,
+          "Y": 9.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_DissolveTex": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_MaskTex": {
+        "m_Texture": {
+          "m_FileID": 0,
+          "m_PathID": 0,
+          "Name": "",
+          "IsNull": true
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_ScreenTex": {
+        "m_Texture": {
+          "m_FileID": 3,
+          "m_PathID": -3512547803458438769,
+          "Name": "Eff_Universe_02",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      },
+      "_ShineTex": {
+        "m_Texture": {
+          "m_FileID": 2,
+          "m_PathID": -8013462765890029978,
+          "Name": "Eff_MultiChannel_06",
+          "IsNull": false
+        },
+        "m_Scale": {
+          "X": 1.0,
+          "Y": 1.0
+        },
+        "m_Offset": {
+          "X": 0.0,
+          "Y": 0.0
+        }
+      }
+    },
+    "m_Ints": null,
+    "m_Floats": {
+      "_A": 0.1,
+      "_Alpha": 1.0,
+      "_AlphaBrightness": 0.4,
+      "_AlphaFadeByDistanceToggle": 0.0,
+      "_AlphaFadeDistance": 2.0,
+      "_AlphaFadeDistanceInvertToggle": 0.0,
+      "_AlphaFadeOffset": 0.0,
+      "_B1": 1.7,
+      "_B2": 1.2,
+      "_BaseTexAlphaChannelSwitch": 0.0,
+      "_BaseTexColorChannelSwitch": 0.0,
+      "_BlendOP": 0.0,
+      "_Blur_Power": 0.0,
+      "_Blur_Scale": 0.0,
+      "_ColorBrightness": 0.2,
+      "_CubeMap": 1.0,
+      "_CubeMapBrightness": 0.4,
+      "_CubeScreenLerp": 0.937,
+      "_Cull": 0.0,
+      "_DepthFade": 1.0,
+      "_DepthThresh": 1.0,
+      "_DissolveEdgeFade": 4.0,
+      "_DissolveOff_On": 0.0,
+      "_DissolveSwitchLerpOff_On": 0.0,
+      "_DissolveSwitch_Lerp": 0.0,
+      "_DissolveTexChannelSwitch": 0.0,
+      "_Dissolve_Lerp": 0.0,
+      "_DstBlendMode": 10.0,
+      "_EffectedByFog": 0.0,
+      "_FakeLightingScale": 0.0,
+      "_FakeWorldNormalScale": 0.0,
+      "_Float0": 0.47,
+      "_Float1": 5.0,
+      "_Float2": 3.0,
+      "_Float3": 0.0,
+      "_Float4": 0.5,
+      "_Float5": 5.0,
+      "_Float6": 1.0,
+      "_Float7": 0.1,
+      "_FresnalBrightness": 0.1,
+      "_FresnalColorBrightness": 0.0,
+      "_Fresnal_Power": 1.0,
+      "_Fresnal_Scale": 0.0,
+      "_GradientColorToggle": 0.0,
+      "_GradientOffset": -0.38,
+      "_GradientRange": 1.7,
+      "_Keyword0": 1.0,
+      "_Lerp": 0.9,
+      "_LightingScale": 0.069,
+      "_MHYZBias": -0.005,
+      "_MaskAlphaNoiseScaleShineTex": -0.21,
+      "_MaskEgdePower": -4.94,
+      "_MaskTexAlphaChannelSwitch": 2.0,
+      "_MaskTexColorChannelSwitch": 4.0,
+      "_MatCapSize": 1.0,
+      "_NormalIntensity": 37.1,
+      "_PolygonOffsetFactor": 0.0,
+      "_PolygonOffsetUnit": 0.0,
+      "_SOFTPARTICLES": 1.0,
+      "_ScreenLightTexSwitch": 2.0,
+      "_ScreenLightTex_USpeed": -0.03,
+      "_ScreenLightTex_UTiling": 1.7,
+      "_ScreenLightTex_VSpeed": -0.05,
+      "_ScreenLightTex_VTiling": 1.2,
+      "_ScreenTexU": 0.8,
+      "_ScreenTexV": 1.0,
+      "_ScreenTex_USpeed": -0.01,
+      "_ScreenTex_UTiling": 1.6,
+      "_ScreenTex_VSpeed": -0.012,
+      "_ScreenTex_VTiling": 2.0,
+      "_ShineBrightness": 10.0,
+      "_ShinePower": 0.0,
+      "_ShineTexSwitch": 0.0,
+      "_ShineTex_USpeed": -0.05,
+      "_ShineTex_UTiling": 1.7,
+      "_ShineTex_VSpeed": -0.07,
+      "_ShineTex_VTiling": 1.2,
+      "_SrcBlendMode": 5.0,
+      "_WorldNormalScale": 50.0,
+      "_Ztest": 4.0,
+      "_Zwrite": 0.0
+    },
+    "m_Colors": {
+      "_Color0": {
+        "r": 0.99999994,
+        "g": 0.99999994,
+        "b": 0.99999994,
+        "a": 0.0
+      },
+      "_Color1": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "_DarkColor": {
+        "r": 0.8014706,
+        "g": 0.22983336,
+        "b": 0.22983336,
+        "a": 0.0
+      },
+      "_DayColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_FakeDarkColor": {
+        "r": 0.7204868,
+        "g": 0.6102941,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "_FakeLightColor": {
+        "r": 0.8111561,
+        "g": 0.7205882,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "_Fresnal_Color": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0,
+        "a": 0.0
+      },
+      "_GradientColor": {
+        "r": 0.18501297,
+        "g": 0.4156963,
+        "b": 0.86764705,
+        "a": 1.0
+      },
+      "_Highlight_Color": {
+        "r": 1.5485293,
+        "g": 1.7375655,
+        "b": 1.8,
+        "a": 1.0
+      },
+      "_IceDarkColor": {
+        "r": 0.3117647,
+        "g": 0.5373629,
+        "b": 0.8,
+        "a": 1.0
+      },
+      "_IceLightColor": {
+        "r": 1.1249999,
+        "g": 1.716207,
+        "b": 1.8,
+        "a": 1.0
+      },
+      "_LightColor": {
+        "r": 1.7647059,
+        "g": 2.7444224,
+        "b": 3.0000002,
+        "a": 0.0
+      },
+      "_MatCapColor": {
+        "r": 2.427941,
+        "g": 2.5715215,
+        "b": 2.6,
+        "a": 1.0
+      },
+      "_MeshParticleColorArray": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 1.0
+      },
+      "_NormalIntensity": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 0.716,
+        "a": 1.0
+      }
+    }
+  },
+  "m_Name": "Eff_Fresnel_112_T_ZW_SP_03",
+  "Name": "Eff_Fresnel_112_T_ZW_SP_03"
+}
